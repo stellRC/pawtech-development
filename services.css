@@ -1,72 +1,68 @@
 .services-image {
-    position: relative;
-    /* justify-content: center; */
+  position: relative;
+  /* justify-content: center; */
 }
 
 .services-image:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
 
-    background-image: url(img/elec/taylor-vick-M5tzZtFCOfs-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(img/elec/taylor-vick-M5tzZtFCOfs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .flex-service {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
 }
 
 .grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
 }
 
 .service-section {
-    width: 80vw;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  width: 80vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .solutions-col {
-    /* margin-top: 1rem; */
-    width: 80vw;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    padding: 2rem;
-
+  /* margin-top: 1rem; */
+  width: 80vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
 }
 
 .solutions-para {
-    padding: 3vh 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(5px);
-    margin: 5vh 0;
-
-
+  padding: 3vh 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(5px);
+  margin: 5vh 0;
 }
 
+@media only screen and (min-width: 65em) {
+  .solutions-col {
+    width: 60vw;
+  }
 
-@media only screen and (min-width:65em) {
-    .solutions-col {
-        width: 60vw;
-    }
-
-    .grid {
-        grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
-    }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  }
 }
