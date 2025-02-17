@@ -1,3 +1,4 @@
+<!-- 2/16/24, with form -->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
@@ -62,16 +63,10 @@
 						</svg>
 						<span class="phone-number" id="phoneNumber">(201) 564-4500</span>
 					</a>
-
 					<a
 						class="schedule-button button flex-row"
 						aria-label="Schedule Nav Button"
-						href="mail@mail.com"
-						data-part1="Y29udGFjdA=="
-						data-part2="cGF3dGVjaA=="
-						data-part3="Y28="
-						data-subject="Paw%20Tech%20Inquiry"
-						><b class="block-spam" aria-hidden="true">honey</b>
+					>
 						<svg
 							version="1.1"
 							id="schedule-svg"
@@ -108,9 +103,6 @@
 					<a
 						class="remote-button button flex-row"
 						aria-label="SOS Remote Nav Button"
-						href="https://pawtech.screenconnect.com/"
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						<svg
 							version="1.1"
@@ -187,7 +179,7 @@
 			<!-- <div class="bar-learn"><button class="button"><a href="services.html">Learn More</a></button></div> -->
 			<div class="bar-support">
 				<div class="bar-circles">
-					<a class="bar-phone button flex-row" href="tel:201-564-4500">
+					<a class="bar-phone flex-row button">
 						<svg
 							version="1.1"
 							id="phone-svg"
@@ -213,15 +205,7 @@
 						<span id="phoneBtn">(201) 564-4500</span>
 					</a>
 
-					<a
-						class="bar-schedule button flex-row"
-						aria-label="Schedule Nav Button"
-						href="mail@mail.com"
-						data-part1="Y29udGFjdA=="
-						data-part2="cGF3dGVjaA=="
-						data-part3="Y28="
-						data-subject="Paw%20Tech%20Inquiry"
-						><b class="block-spam" aria-hidden="true">honey</b>
+					<a class="bar-schedule button flex-row">
 						<svg
 							version="1.1"
 							id="schedule-svg"
@@ -253,13 +237,8 @@
 						</svg>
 						<span id="scheduleBtn">Schedule Assessment</span>
 					</a>
-					<a
-						class="bar-remote button flex-row"
-						aria-label="SOS Remote Nav Button"
-						href="https://pawtech.screenconnect.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+
+					<a class="bar-remote button flex-row">
 						<svg
 							version="1.1"
 							id="remote-svg"
@@ -1002,51 +981,118 @@
 				</div>
 			</section>
 			<section class="lets-talk main-section" id="contact">
-				<!-- <section class="talk-left"> -->
-				<section class="contact-section flex" id="contactSection">
-					<header class="section-header flex">
-						<h2 class="section-title">Let's Talk</h2>
-						<span>Our team is here to help.</span>
-					</header>
+				<section class="talk-left">
+					<section class="contact-section flex" id="contactSection">
+						<header class="section-header flex">
+							<h2 class="section-title">Let's Talk</h2>
+							<span>Our team is here to help.</span>
+						</header>
 
-					<p>
-						When you get in touch with us we start a dialogue, taking time to
-						understand the specific needs of your practice, personalizing the
-						service we provide you, and ensuring that you can forget the tech
-						and focus on delivering the best medical care for your patients.
-					</p>
-					<section class="contact-info">
-						<div class="contact-number flex">
-							<img
-								loading="lazy"
-								width="48"
-								height="48"
-								src="img/icons/phone.png"
-								alt="Call Icon"
-							/>
-							<span>Call</span>
-							<span>(201) 564-4500</span>
-						</div>
-						<div class="contact-email flex">
-							<img
-								loading="lazy"
-								width="48"
-								height="48"
-								src="img/icons/mail.png"
-								alt="Email Icon"
-							/>
-							<span>Email</span>
-							<span
-								><a
-									class="contact-add"
-									href="mail@mail.com"
-									data-part1="Y29udGFjdA=="
-									data-part2="cGF3dGVjaA=="
-									data-part3="Y28="
-									data-subject="Paw%20Tech%20Inquiry"
-									><b class="block-spam" aria-hidden="true">honey</b></a
-								></span
-							>
+						<p>
+							When you get in touch with us we start a dialogue, taking time to
+							understand the specific needs of your practice, personalizing the
+							service we provide you, and ensuring that you can forget the tech
+							and focus on delivering the best medical care for your patients.
+						</p>
+						<section class="contact-info">
+							<div class="contact-number flex">
+								<img
+									loading="lazy"
+									width="48"
+									height="48"
+									src="img/icons/phone.png"
+									alt="Call Icon"
+								/>
+								<span>Call</span>
+								<span>(201) 564-4500</span>
+							</div>
+							<div class="contact-email flex">
+								<img
+									loading="lazy"
+									width="48"
+									height="48"
+									src="img/icons/mail.png"
+									alt="Email Icon"
+								/>
+								<span>Email</span>
+								<span>contact@pawtech.co</span>
+							</div>
+						</section>
+					</section>
+					<section class="main-section form-section flex" id="form">
+						<form action="" method="post" class="form flex">
+							<div class="form-group field">
+								<label for="name-input" class="">Name</label>
+								<span
+									id="nameError"
+									class="field-error"
+									aria-live="assertive"
+								></span>
+								<input
+									class="name"
+									id="name-input"
+									type="text"
+									name="name"
+									aria-required="true"
+								/>
+							</div>
+							<div class="form-group field">
+								<label for="email-input">Email Address</label>
+								<span
+									id="emailError"
+									class="field-error"
+									aria-live="assertive"
+								></span>
+								<input
+									type="email"
+									id="email-input"
+									class="email"
+									name="email"
+									size="30"
+									aria-required="true"
+									aria-describedby="emailError"
+								/>
+							</div>
+							<div class="form-group field">
+								<label for="phone-input">Phone Number</label>
+								<span
+									id="phoneError"
+									class="field-error"
+									aria-live="assertive"
+								></span>
+								<input
+									type="tel"
+									id="phone-input"
+									class="phone"
+									name="phone"
+									aria-required="true"
+								/>
+							</div>
+							<div class="form-group field">
+								<label for="message-input">Message</label>
+								<span
+									id="messageError"
+									class="field-error"
+									aria-live="assertive"
+								></span>
+								<textarea
+									name="message"
+									class="message"
+									id="message-input"
+									rows="3"
+									aria-required="true"
+								></textarea>
+							</div>
+							<div class="form-feedback">
+								<p class="form-feedback-sr sr-only" aria-live="assertive">
+									<!-- js -->
+								</p>
+								<p class="form-feedback-msg" aria-hidden="true"></p>
+							</div>
+							<input class="input-submit button" type="submit" value="Send" />
+						</form>
+						<div class="talk-right horse-sm">
+							<img loading="lazy" src="img/horse.png" alt="" class="horse" />
 						</div>
 					</section>
 				</section>
