@@ -792,6 +792,10 @@ hr {
 	display: none;
 }
 
+.divider {
+	height: 5vh;
+}
+
 .contact-section {
 	gap: 1rem;
 	padding-bottom: 2rem;
