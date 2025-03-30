@@ -279,10 +279,10 @@ a:focus {
 .paw-flash-outer {
 	position: absolute;
 	border-radius: 50%;
-	width: 13vw;
-	height: 12vw;
+	width: 15vw;
+	height: 15vw;
 	top: 2vh;
-	left: 2.5vw;
+	left: 3vw;
 	overflow: hidden;
 }
 
@@ -493,6 +493,7 @@ hr {
 	overflow: hidden;
 	bottom: 0;
 	right: 0;
+	display: none;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -1143,10 +1144,10 @@ footer a:focus,
 	}
 
 	.paw-flash-outer {
-		width: 13vw;
-		height: 12vw;
+		width: 12vw;
+		height: 11vw;
 		left: 2.5vw;
-		top: 2.5vh;
+		top: 5vh;
 	}
 
 	.support-buttons {
