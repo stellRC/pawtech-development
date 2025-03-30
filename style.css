@@ -493,7 +493,7 @@ hr {
 	overflow: hidden;
 	bottom: 0;
 	right: 0;
-	display: none;
+	display: flex;
 	
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -1124,6 +1124,13 @@ footer a:focus,
 /* #endregion */
 
 /* #region 40em (640px) */
+@media only screen and (max-height: 20em),
+screen and (max-width: 400px){
+	.animal-container {
+		display: none;
+	}
+}
+
 @media only screen and (min-width: 40em) {
 	body {
 		letter-spacing: var(--leter-spacing-lg);
@@ -1205,9 +1212,7 @@ footer a:focus,
 		font-size: var(--fs-400);
 	}
 
-	.animal-container {
-		display: flex;
-	}
+
 
 	.cat {
 		display: block;
