@@ -1,8 +1,6 @@
 # pawtech-development
 
 ## nav
-
-- hook up buttons
 - sizing for logo
 
 ## splash

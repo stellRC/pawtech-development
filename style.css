@@ -1165,16 +1165,20 @@ footer a:focus,
 
 	.intro-text {
 		text-align: start;
+
 	}
 
 	.intro-title {
 		font-size: var(--fs-500);
 	}
 
+	.intro,
+	.typewrite,
+	.wrap {
+		cursor: default;
+	}
+
 	.typewrite > .wrap {
-		/* border-right: 0.03em solid var(--white-dull);
-         */
-		cursor: pointer;
 		font-family: "Courier New", Courier, monospace;
 		font-size: 1.5rem;
 		border-right: 1px solid rgba(255, 255, 255, 0.5);
@@ -1212,10 +1216,6 @@ footer a:focus,
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
-	/* .lets-talk {
-		justify-content: flex-end;
-		align-items: flex-end;
-	} */
 
 	.solutions-list {
 		padding: 2rem;
