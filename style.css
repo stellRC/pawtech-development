@@ -494,7 +494,7 @@ hr {
 	bottom: 0;
 	right: 0;
 	display: none;
-	display: flex;
+	
 	align-items: flex-end;
 	justify-content: flex-start;
 	width: 100vw;
@@ -1203,6 +1203,10 @@ footer a:focus,
 
 	p {
 		font-size: var(--fs-400);
+	}
+
+	.animal-container {
+		display: flex;
 	}
 
 	.cat {
