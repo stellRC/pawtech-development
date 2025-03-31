@@ -134,3 +134,48 @@ window.onload = function () {
 // 			`${atob(attrs.part2)}.${atob(attrs.part3)}`;
 // 	}
 // }
+
+document.addEventListener("scroll", () => {
+	let stickyHeader = document.querySelector('.sticky-header');
+	for (const child of stickyHeader.children) 
+	{
+		if (window.scrollY > 600) {
+			child.classList.remove('hide');
+		
+		} else {
+			child.classList.add('hide');
+			
+	
+		}
+	}
+	
+})
+
+function showText(e)
+{
+	if (!e.classList.contains('show'))
+	{
+		e.classList.add('show');
+	} else {
+		e.classList.remove('show');
+	}
+
+}
+
+function hideText(e)
+{
+	e.classList.remove('show');
+}
+
+function showMore(e) {
+	let servicesMore = document.getElementById('servicesMore');
+	if (e.innerHTML == 'See More')
+	{
+		e.innerHTML = 'See Less';
+		servicesMore.classList.add('show');
+	} else {
+		e.innerHTML = 'See More';
+		servicesMore.classList.remove('show');
+	}
+	
+}
