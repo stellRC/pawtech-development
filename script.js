@@ -79,15 +79,15 @@ TxtType.prototype.tick = function () {
 
 // SOLUTION EXPANSION LINKS
 
-function showSolutions() {
-	solutionsMore.classList.add("solutions-visible");
-	solutionsMore.classList.remove("solutions-hidden");
-	this.parentElement.classList.add("solutions-hidden");
+// function showSolutions() {
+// 	solutionsMore.classList.add("solutions-visible");
+// 	solutionsMore.classList.remove("solutions-hidden");
+// 	this.parentElement.classList.add("solutions-hidden");
 
-}
-document
-	.getElementById("solutionsShow")
-	.addEventListener("click", showSolutions);
+// }
+// document
+// 	.getElementById("solutionsShow")
+// 	.addEventListener("click", showSolutions);
 
 // let solutionsList = document.querySelectorAll('.solutions-description');
 // solutionsList.forEach((solution) => solution.onClick = hideSolutions(e))
@@ -117,20 +117,20 @@ window.onload = function () {
 	// hiddenSpan.style.display = 'none'
 };
 
-// MAILTO LINK
-const links = document.querySelectorAll(
-	"[data-part1][data-part2][data-part3][data-subject]"
-);
-for (const link of links) {
-	const attrs = link.dataset;
-	link.setAttribute(
-		"href",
-		`mailto:${attrs.part1}&#64;${attrs.part2}&#46;${attrs.part3}?subject=${attrs.subject}`
-	);
-	if (link.classList.contains("contact-add")) {
-		link.innerHTML =
-			`${atob(attrs.part1)}@` +
-			link.innerHTML +
-			`${atob(attrs.part2)}.${atob(attrs.part3)}`;
-	}
-}
+// // MAILTO LINK
+// const links = document.querySelectorAll(
+// 	"[data-part1][data-part2][data-part3][data-subject]"
+// );
+// for (const link of links) {
+// 	const attrs = link.dataset;
+// 	link.setAttribute(
+// 		"href",
+// 		`mailto:${attrs.part1}&#64;${attrs.part2}&#46;${attrs.part3}?subject=${attrs.subject}`
+// 	);
+// 	if (link.classList.contains("contact-add")) {
+// 		link.innerHTML =
+// 			`${atob(attrs.part1)}@` +
+// 			link.innerHTML +
+// 			`${atob(attrs.part2)}.${atob(attrs.part3)}`;
+// 	}
+// }
