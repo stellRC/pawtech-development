@@ -435,7 +435,13 @@ hr {
 		text-align: center;
 		padding-top: 1rem;
 		margin-bottom: 2rem;
+
+		/* for glass */
+		height: fit-content;
+		overflow-x: hidden;
 	}
+
+
 
 	.main-section p {
 		padding-inline: 1.5rem;
@@ -446,7 +452,18 @@ hr {
 .services-header h2 {
 	margin-bottom: 1rem;
 }
+
+.glass-text {
+	z-index: 10;
+	position: relative;
+}
+
+
 .background-glass {
+		overflow-x: hidden;
+		width: 90%;
+		height: 90%;
+		position: absolute;
 		background: rgba(0, 52, 255, 0);
 		border-radius: 16px 16px 0 0;
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 10.1);
@@ -459,6 +476,8 @@ hr {
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
 	padding: 1rem;
+
+	z-index: 10;
 }
 
 .service-link {
