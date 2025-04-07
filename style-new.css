@@ -438,6 +438,40 @@ hr {
 .align-left {
   text-align: left;
 }
+
+/* .underline-link:hover,
+.underline-link:focus {
+  outline: 1px 0 0 0 solid var(--clr-neutral-700);
+	text-decoration: underline;
+	text-decoration-thickness: 0.07lh;
+	text-underline-offset: 0.17lh;
+} */
+
+.underline-link {
+  transition: --offset 300ms, text-decoration-color 300ms;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+.underline-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--clr-neutral-900);
+  opacity: 0.5;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.underline-link:hover::after,
+.underline-link:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
 /* #endregion */
 
 /* #region SERVICES */
@@ -670,18 +704,13 @@ footer {
   .logo-nav_wrapper nav {
     margin-top: -3rem;
   }
-  hgroup {
-    flex-direction: row;
-    flex-wrap: nowrap;
 
-    justify-items: flex-start;
-    width: fit-content;
-    gap: 1.5rem;
-  }
+  /* .desktop-description hr {
+    padding-left: 2rem;
+  } */
 
   hr {
-    transform: rotate(90deg);
-    width: 6rem;
+    width: 50vw;
   }
 
   .partners-list {
@@ -702,6 +731,15 @@ footer {
 }
 
 @media only screen and (min-width: 55em) {
+  hgroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+  hr {
+    transform: rotate(90deg);
+    width: 6rem;
+  }
   .cat {
     display: block;
   }
@@ -737,6 +775,36 @@ footer {
 }
 /* 1030px */
 @media only screen and (min-width: 65em) {
+  hgroup {
+    display: none;
+  }
+
+  hr {
+    transform: rotate(90deg);
+    width: 6rem;
+
+    display: none;
+  }
+
+  .desktop-description,
+  .desktop-subtitle {
+    display: block;
+  }
+
+  .desktop-subtitle {
+    position: absolute;
+    bottom: 30vh;
+    left: 5vw;
+  }
+
+  .desktop-description {
+    position: absolute;
+    right: 5vw;
+    top: 25vh;
+
+    display: flex;
+    gap: 0.5rem;
+  }
   .pup {
     display: block;
   }
@@ -782,6 +850,9 @@ footer {
 /* 1282px */
 
 @media only screen and (min-width: 80em) {
+  .desktop-description {
+    right: 10vw;
+  }
   nav li {
     width: fit-content;
   }
