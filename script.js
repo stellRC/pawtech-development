@@ -79,25 +79,6 @@ TxtType.prototype.tick = function () {
 
 // SOLUTION EXPANSION LINKS
 
-// function showSolutions() {
-// 	solutionsMore.classList.add("solutions-visible");
-// 	solutionsMore.classList.remove("solutions-hidden");
-// 	this.parentElement.classList.add("solutions-hidden");
-
-// }
-// document
-// 	.getElementById("solutionsShow")
-// 	.addEventListener("click", showSolutions);
-
-// let solutionsList = document.querySelectorAll('.solutions-description');
-// solutionsList.forEach((solution) => solution.onClick = hideSolutions(e))
-
-// function hideSolutions(e) {
-// 	if (e.target.parentElement.classList.contains('.solutions-description')) {
-
-// 	}
-// }
-
 // TYPEWRITE ANIMATION
 window.onload = function () {
   let elements = document.getElementsByClassName("typewrite");

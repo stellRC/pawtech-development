@@ -177,13 +177,54 @@ nav li {
 .link-background:hover,
 .link-background:focus {
   background-color: var(--link-hover);
-  -webkit-transform: scale(1.05) translateY(-0.125em);
-  transform: scale(1.05) translateY(-0.125em);
 }
 
 .remote-link:hover {
   background: var(--link-emergency-hover);
 }
+
+.link-background::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 0.1em;
+  background-color: var(--clr-neutral-900);
+  opacity: 0.5;
+  transition: opacity 300ms, transform 300ms, background-color 300ms;
+}
+
+.logo-link {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-background:hover::after,
+.link-background:focus::after {
+  opacity: 1;
+  transform: translate3d(0em, 0.1em, 0em);
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  opacity: 1;
+  transform: translate3d(0em, 0.1em, 0em);
+  transform: rotate(90deg);
+  transform: scale(1.1);
+}
+
+.sticky-header .link-background::after {
+  width: 100%;
+  left: 0;
+}
+
+/* .icon-animation {
+  opacity: 0;
+} */
+
+/* .logo-link:hover {
+  background-color: red;
+} */
 
 nav a {
   display: flex;
@@ -439,16 +480,7 @@ hr {
   text-align: left;
 }
 
-/* .underline-link:hover,
-.underline-link:focus {
-  outline: 1px 0 0 0 solid var(--clr-neutral-700);
-	text-decoration: underline;
-	text-decoration-thickness: 0.07lh;
-	text-underline-offset: 0.17lh;
-} */
-
 .underline-link {
-  transition: --offset 300ms, text-decoration-color 300ms;
   display: block;
   position: relative;
   padding: 0.2em 0;
@@ -795,6 +827,8 @@ footer {
     position: absolute;
     bottom: 30vh;
     left: 5vw;
+    font-size: var(--fs-600);
+    font-weight: bolder;
   }
 
   .desktop-description {
@@ -804,6 +838,9 @@ footer {
 
     display: flex;
     gap: 0.5rem;
+
+    font-size: var(--fs-500);
+    /* font-weight: bolder; */
   }
   .pup {
     display: block;
@@ -865,6 +902,37 @@ footer {
   }
   .logo-nav_wrapper nav li {
     width: 20vw;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .icon-animation {
+    --range-start: contain 0;
+    --range-end: contain 100%;
+
+    animation: fade-in ease;
+    animation-timeline: view(block);
+    animation-range: var(--range-start) var(--range-end);
+  }
+  @supports (animation-timeline: scroll()) {
+    .icon-animation {
+      /* animation-name: rotateAnimation;
+      animation: fade-in ease;
+      animation-timeline: scroll(); */
+
+      animation: fade-in ease;
+      animation-timeline: view(block);
+      animation-range: contain 0 contain 100%;
+    }
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -17,17 +17,12 @@
       />
       <div class="logo-nav_wrapper">
         <h1>
-          <a
-            class="logo-container"
-            href="#home"
-            title="Top of Page"
-            alt="PawTech"
-          >
+          <div class="logo-container" href="#0" title="Top of Page" alt="PawTech">
             <img src="img/site-logo/logo_text-2.webp" alt="" />
             <div class="logo-animation-outer">
               <div class="logo-animation-inner"></div>
             </div>
-          </a>
+          </div>
         </h1>
         <nav>
           <ul>
@@ -200,7 +195,7 @@
     <main>
       <header class="sticky-header">
         <a
-          class="logo-container"
+          class="logo-container logo-link"
           href="#home"
           title="Top of Page"
           alt="PawTech"
@@ -669,6 +664,46 @@
                 >
                   <img
                     loading="lazy"
+                    src="img/icons/job.svg"
+                    alt="Email Icon"
+                  />
+                  <h3>vCIO (Virtual Chief Information Officer) Services</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Let us be your strategic partner. One who not only knows the
+                    industry, but understands you, your needs, and the needs of
+                    your practice. We can help you achieve the veterinary
+                    practice of your dreams.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    This brings together all of our managed services, security,
+                    and regular consultations to explore new avenues of growth
+                    and efficiency for your business.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Our simple pricing is per veterinarian on staff
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
                     src="img/icons/voip.svg"
                     alt="Communication Icon"
                   />
@@ -734,46 +769,6 @@
               class="services-grid services-more background-glass"
               id="servicesMore"
             >
-              <li>
-                <div class="background-glass"></div>
-                <button
-                  class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
-                >
-                  <img
-                    loading="lazy"
-                    src="img/icons/job.svg"
-                    alt="Email Icon"
-                  />
-                  <h3>vCIO (Virtual Chief Information Officer) Services</h3>
-                </button>
-                <div class="service-text">
-                  <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Let us be your strategic partner. One who not only knows the
-                    industry, but understands you, your needs, and the needs of
-                    your practice. We can help you achieve the veterinary
-                    practice of your dreams.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    This brings together all of our managed services, security,
-                    and regular consultations to explore new avenues of growth
-                    and efficiency for your business.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Our simple pricing is per veterinarian on staff
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
-              </li>
               <li>
                 <div class="background-glass"></div>
                 <button
@@ -1033,7 +1028,7 @@
           <div>
             <ul class="who-grid background-glass">
               <li class="who-col">
-                <img loading="lazy" src="img/icons/business.svg" alt="Icon" />
+                <img loading="lazy" class="icon-animation" src="img/icons/business.svg" alt="Icon" />
                 <h3>General Practices</h3>
                 <p>
                   As general practitioners you have enough to worry about with
@@ -1046,7 +1041,7 @@
                 </p>
               </li>
               <li class="who-col">
-                <img loading="lazy" src="img/icons/job.svg" alt="Icon" />
+                <img loading="lazy" class="icon-animation" src="img/icons/job.svg" alt="Icon" />
                 <h3>Corporate Practice / Management Groups</h3>
                 <p>
                   We leverage group purchasing power for every aspect of our
@@ -1059,7 +1054,7 @@
               </li>
 
               <li class="who-col">
-                <img loading="lazy" src="img/icons/mobile.svg" alt="Icon" />
+                <img loading="lazy" class="icon-animation" src="img/icons/mobile.svg" alt="Icon" />
                 <h3>Mobile Practices</h3>
                 <p>
                   When you’re on the move, things can get a little
@@ -1072,7 +1067,7 @@
                 </p>
               </li>
               <li class="who-col">
-                <img loading="lazy" src="img/icons/conference.svg" alt="Icon" />
+                <img loading="lazy" class="icon-animation" src="img/icons/conference.svg" alt="Icon" />
                 <h3>Practice Groups / Multi-Location Hospitals</h3>
                 <p>
                   Whether you have 2 locations or 10, our comprehensive
@@ -1083,7 +1078,7 @@
                 </p>
               </li>
               <li class="who-col">
-                <img loading="lazy" src="img/icons/rocket.svg" alt="Icon" />
+                <img loading="lazy" class="icon-animation" src="img/icons/rocket.svg" alt="Icon" />
                 <h3>Start-Up Clinics</h3>
                 <p>
                   Whether you’ve just opened your doors, or you plan to open
