@@ -1,997 +1,1206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PawTech New</title>
-    <link rel="stylesheet" href="style-new.css">
+    <link rel="stylesheet" href="style-new.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="mobile-header">
-       <img loading="lazy" class="header-background" src="/img/elec/pexels-motherboard.jpg" alt="">
-        <h1>
-            <a class="logo-container" href="#home" title="Top of Page" alt="PawTech">
-                <img src="img/site-logo/logo_text-2.webp" alt="">
-                <div class="logo-animation-outer">
-                    <div class="logo-animation-inner"></div>
-                </div>
+      <img
+        loading="lazy"
+        class="header-background"
+        src="/img/elec/pexels-motherboard.jpg"
+        alt=""
+      />
+      <h1>
+        <a
+          class="logo-container"
+          href="#home"
+          title="Top of Page"
+          alt="PawTech"
+        >
+          <img src="img/site-logo/logo_text-2.webp" alt="" />
+          <div class="logo-animation-outer">
+            <div class="logo-animation-inner"></div>
+          </div>
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li class="link-background">
+            <a aria-label="telephone link" href="tel:+2015644500">
+              <svg
+                version="1.1"
+                id="phone-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 118.875 122.877"
+                xml:space="preserve"
+                alt="Call Icon"
+                aria-labelledby="phoneNumber"
+              >
+                <g>
+                  <path
+                    fill="white"
+                    d="M1.432,20.714c9.427,6.476,18.779,12.989,26.673,21.375 C23.58,62.076,41.64,78.045,58.111,87.453c6.448,3.683,9.298,6.265,16.476,5.024l28.268,27.696 C49.657,138.039-10.045,63.084,1.432,20.714L1.432,20.714z M81.874,85.356l6.201-6.298c1.788-1.819,4.74-1.842,6.559-0.053 l22.862,22.509c1.818,1.789,1.841,4.741,0.053,6.559l-6.203,6.299c-1.789,1.818-4.741,1.841-6.56,0.052L81.924,91.915 C80.105,90.127,80.083,87.175,81.874,85.356L81.874,85.356z M7.004,7.467l4.5-5.464c1.929-2.342,5.425-2.68,7.767-0.751 l23.405,19.281c2.342,1.931,2.677,5.425,0.75,7.77l-4.502,5.461c-1.93,2.345-5.425,2.68-7.768,0.751L7.755,15.234 C5.413,13.305,5.073,9.809,7.004,7.467L7.004,7.467z"
+                  />
+                </g>
+              </svg>
+              <span id="phoneNumber">(201) 564-4500</span>
             </a>
-        </h1>
+          </li>
+          <li class="link-background">
+            <a
+              aria-label="email link"
+              href="mail@mail.com"
+              data-part1="Y29udGFjdA=="
+              data-part2="cGF3dGVjaA=="
+              data-part3="Y28="
+              data-subject="Paw%20Tech%20Inquiry"
+              ><b class="hide" aria-hidden="true">honey</b>
+              <svg
+                version="1.1"
+                id="schedule-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 110.01 122.88"
+                style="enable-background: new 0 0 110.01 122.88"
+                xml:space="preserve"
+                alt="Schedule Icon"
+                aria-labelledby="scheduleButton"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    fill="white"
+                    class="st0"
+                    d="M1.87,14.69h22.66L24.5,14.3V4.13C24.5,1.86,26.86,0,29.76,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39 h38.59l-0.03-0.39V4.13C73.55,1.86,75.91,0,78.8,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39h24.11c1.03,0,1.87,0.84,1.87,1.87 v19.46c0,1.03-0.84,1.87-1.87,1.87H1.87C0.84,37.88,0,37.04,0,36.01V16.55C0,15.52,0.84,14.69,1.87,14.69L1.87,14.69z M0.47,42.19 h109.08c0.26,0,0.46,0.21,0.46,0.46l0,0v79.76c0,0.25-0.21,0.46-0.46,0.46l-109.08,0c-0.25,0-0.47-0.21-0.47-0.46V42.66 C0,42.4,0.21,42.19,0.47,42.19L0.47,42.19L0.47,42.19z M97.27,52.76H83.57c-0.83,0-1.5,0.63-1.5,1.4V66.9c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4V54.16C98.78,53.39,98.1,52.76,97.27,52.76L97.27,52.76z M12.24,74.93h13.7 c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H12.71c-0.83,0-1.5-0.63-1.5-1.4V75.87c0-0.77,0.68-1.4,1.5-1.4 L12.24,74.93L12.24,74.93z M12.24,97.11h13.7c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.24,0 c-0.83,0-1.5-0.63-1.5-1.4V98.51c0-0.77,0.68-1.4,1.5-1.4L12.24,97.11L12.24,97.11z M12.24,52.76h13.7c0.83,0,1.51,0.63,1.51,1.4 V66.9c0,0.77-0.68,1.4-1.51,1.4l-13.24,0c-0.83,0-1.5-0.63-1.5-1.4V54.16c0-0.77,0.68-1.4,1.5-1.4L12.24,52.76L12.24,52.76z M36.02,52.76h13.71c0.83,0,1.5,0.63,1.5,1.4V66.9c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16 C34.51,53.39,35.19,52.76,36.02,52.76L36.02,52.76L36.02,52.76z M36.02,74.93h13.71c0.83,0,1.5,0.63,1.5,1.4v12.74 c0,0.77-0.68,1.4-1.5,1.4H36.02c-0.83,0-1.51-0.63-1.51-1.4V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L36.02,74.93z M36.02,97.11h13.71 c0.83,0,1.5,0.63,1.5,1.4v12.74c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V98.51 C34.51,97.74,35.19,97.11,36.02,97.11L36.02,97.11L36.02,97.11z M59.79,52.76H73.5c0.83,0,1.51,0.63,1.51,1.4V66.9 c0,0.77-0.68,1.4-1.51,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16C58.29,53.39,58.96,52.76,59.79,52.76L59.79,52.76 L59.79,52.76z M59.79,74.93H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H59.79c-0.83,0-1.51-0.63-1.51-1.4 V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L59.79,74.93z M97.27,74.93H83.57c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4L97.27,74.93L97.27,74.93z M97.27,97.11H83.57 c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4 L97.27,97.11L97.27,97.11z M59.79,97.11H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.71,0 c-0.83,0-1.51-0.63-1.51-1.4V98.51C58.29,97.74,58.96,97.11,59.79,97.11L59.79,97.11L59.79,97.11z M7.01,47.71h96.92 c0.52,0,0.94,0.44,0.94,0.94v67.77c0,0.5-0.44,0.94-0.94,0.94H6.08c-0.5,0-0.94-0.42-0.94-0.94V49.58 C5.14,48.55,5.98,47.71,7.01,47.71L7.01,47.71L7.01,47.71z M78.8,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11l-0.03-0.41H73.58 l-0.03,0.41v10.16C73.55,27.54,75.91,29.4,78.8,29.4L78.8,29.4L78.8,29.4z M29.76,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11 l-0.03-0.41H24.53l-0.03,0.41v10.16C24.5,27.54,26.86,29.4,29.76,29.4L29.76,29.4z"
+                  />
+                </g>
+              </svg>
+              <span id="scheduleButton">Schedule Assessment</span>
+            </a>
+          </li>
+          <li class="link-background remote-link">
+            <a
+              aria-label="SOS Remote link"
+              href="https://pawtech.screenconnect.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                version="1.1"
+                id="remote-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 94.35"
+                width="1.5rem"
+                height="1.5rem"
+                style="enable-background: new 0 0 122.88 94.35"
+                xml:space="preserve"
+                alt="Remote Icon"
+                aria-labelledby="remoteButton"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    fill="white"
+                    class="st0"
+                    d="M90.37,26.48h25.48c1.94,0,3.71,0.79,4.97,2.06c1.28,1.28,2.06,3.04,2.06,4.97v53.82 c0,1.94-0.79,3.71-2.06,4.97c-1.28,1.28-3.04,2.06-4.97,2.06H90.37c-1.94,0-3.71-0.79-4.97-2.06c-1.28-1.28-2.06-3.04-2.06-4.97 V33.5c0-1.94,0.79-3.71,2.06-4.97C86.68,27.25,88.43,26.48,90.37,26.48L90.37,26.48z M3.05,0h106.12c1.68,0,3.05,1.37,3.05,3.05 v18.44h-6.48V8.44c0-1.48-1.21-2.7-2.7-2.7H9.17v0c-1.48,0-2.7,1.21-2.7,2.7v52.53c0,1.48,1.21,2.7,2.7,2.7H76.7V76.4H3.05 C1.37,76.4,0,75.03,0,73.35V3.05C0,1.37,1.37,0,3.05,0L3.05,0L3.05,0z M42.27,80.61h27.67c0.07,4.79,2.04,9.07,7.39,12.45H34.89 C39.16,89.96,42.29,86.19,42.27,80.61L42.27,80.61L42.27,80.61z M56.11,66.12c2.16,0,3.92,1.75,3.92,3.92 c0,2.16-1.76,3.92-3.92,3.92c-2.16,0-3.92-1.75-3.92-3.92C52.19,67.88,53.94,66.12,56.11,66.12L56.11,66.12z M103.1,85.72 c1.59,0,2.89,1.28,2.89,2.89c0,1.59-1.28,2.89-2.89,2.89c-1.59,0-2.89-1.28-2.89-2.89C100.21,87.02,101.49,85.72,103.1,85.72 L103.1,85.72z M86.3,83.52h33.61V37.37H86.3V83.52L86.3,83.52z"
+                  />
+                </g>
+              </svg>
+              <span id="remoteButton">SOS / Remote Support</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hgroup>
+        <p class="subtitle">VETERINARY I.T. SUPPORT SERVICES</p>
+        <hr />
+        <div class="subtitle-description">
+          <a
+            href=""
+            class="typewrite"
+            data-period="500"
+            data-type='["> We are the vet tech experts. \n  A full IT service provider. \n  Catering to","", " animal hospitals"," veterinary clinics"," mobile veterinary practices"," veterinary professionals.\n> That’s all we do. "]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </div>
+      </hgroup>
+      <section class="animal-container">
+        <img
+          loading="lazy"
+          class="mouse"
+          src="img/animals/rat.webp"
+          alt="mouse"
+        />
+        <img
+          loading="lazy"
+          class="lizard"
+          src="img/animals/lizard.webp"
+          alt="lizard"
+        />
+        <img
+          loading="lazy"
+          class="bird"
+          src="img/animals/bird.webp"
+          alt="bird"
+        />
+        <img loading="lazy" class="cat" src="img/animals/cat.webp" alt="cat" />
+        <img
+          loading="lazy"
+          class="pup"
+          src="img/animals/dog.webp"
+          alt="puppy"
+        />
+      </section>
+    </header>
+    <main>
+      <header class="sticky-header">
+        <a
+          class="logo-container"
+          href="#home"
+          title="Top of Page"
+          alt="PawTech"
+        >
+          <img src="img/site-logo/logo_text-2.webp" alt="" />
+          <!-- <div class="logo-animation-outer">
+                    <div class="logo-animation-inner"></div>
+                </div> -->
+        </a>
         <nav>
-            <ul>
-                <li class="link-background">
-                    <a aria-label="telephone link" href="tel:+2015644500">
-                        <svg
-							version="1.1"
-							id="phone-svg"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							x="0px"
-							y="0px"
-							width="1.5rem"
-							height="1.5rem"
-							viewBox="0 0 118.875 122.877"
-							xml:space="preserve"
-							alt="Call Icon"
-							aria-labelledby="phoneNumber"
-						>
-							<g>
-								<path
-									fill="white"
-									d="M1.432,20.714c9.427,6.476,18.779,12.989,26.673,21.375 C23.58,62.076,41.64,78.045,58.111,87.453c6.448,3.683,9.298,6.265,16.476,5.024l28.268,27.696 C49.657,138.039-10.045,63.084,1.432,20.714L1.432,20.714z M81.874,85.356l6.201-6.298c1.788-1.819,4.74-1.842,6.559-0.053 l22.862,22.509c1.818,1.789,1.841,4.741,0.053,6.559l-6.203,6.299c-1.789,1.818-4.741,1.841-6.56,0.052L81.924,91.915 C80.105,90.127,80.083,87.175,81.874,85.356L81.874,85.356z M7.004,7.467l4.5-5.464c1.929-2.342,5.425-2.68,7.767-0.751 l23.405,19.281c2.342,1.931,2.677,5.425,0.75,7.77l-4.502,5.461c-1.93,2.345-5.425,2.68-7.768,0.751L7.755,15.234 C5.413,13.305,5.073,9.809,7.004,7.467L7.004,7.467z"
-								/>
-							</g>
-						</svg>
-                        <span id="phoneNumber">(201) 564-4500</span>
-                    </a>
-                </li>
-                <li class="link-background">
-                    <a
-                    aria-label="email link"
+          <ul>
+            <li class="link-background">
+              <a aria-label="telephone link" href="tel:+2015644500">
+                <svg
+                  version="1.1"
+                  id="phone-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="1.5rem"
+                  height="1.5rem"
+                  viewBox="0 0 118.875 122.877"
+                  xml:space="preserve"
+                  alt="Call Icon"
+                  aria-labelledby="phoneNumber"
+                >
+                  <g>
+                    <path
+                      fill="white"
+                      d="M1.432,20.714c9.427,6.476,18.779,12.989,26.673,21.375 C23.58,62.076,41.64,78.045,58.111,87.453c6.448,3.683,9.298,6.265,16.476,5.024l28.268,27.696 C49.657,138.039-10.045,63.084,1.432,20.714L1.432,20.714z M81.874,85.356l6.201-6.298c1.788-1.819,4.74-1.842,6.559-0.053 l22.862,22.509c1.818,1.789,1.841,4.741,0.053,6.559l-6.203,6.299c-1.789,1.818-4.741,1.841-6.56,0.052L81.924,91.915 C80.105,90.127,80.083,87.175,81.874,85.356L81.874,85.356z M7.004,7.467l4.5-5.464c1.929-2.342,5.425-2.68,7.767-0.751 l23.405,19.281c2.342,1.931,2.677,5.425,0.75,7.77l-4.502,5.461c-1.93,2.345-5.425,2.68-7.768,0.751L7.755,15.234 C5.413,13.305,5.073,9.809,7.004,7.467L7.004,7.467z"
+                    />
+                  </g>
+                </svg>
+                <span id="phoneNumber">(201) 564-4500</span>
+              </a>
+            </li>
+            <li class="link-background">
+              <a
+                aria-label="email link"
+                href="mail@mail.com"
+                data-part1="Y29udGFjdA=="
+                data-part2="cGF3dGVjaA=="
+                data-part3="Y28="
+                data-subject="Paw%20Tech%20Inquiry"
+                ><b class="hide" aria-hidden="true">honey</b>
+                <svg
+                  version="1.1"
+                  id="schedule-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="1.5rem"
+                  height="1.5rem"
+                  viewBox="0 0 110.01 122.88"
+                  style="enable-background: new 0 0 110.01 122.88"
+                  xml:space="preserve"
+                  alt="Schedule Icon"
+                  aria-labelledby="scheduleButton"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      fill="white"
+                      class="st0"
+                      d="M1.87,14.69h22.66L24.5,14.3V4.13C24.5,1.86,26.86,0,29.76,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39 h38.59l-0.03-0.39V4.13C73.55,1.86,75.91,0,78.8,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39h24.11c1.03,0,1.87,0.84,1.87,1.87 v19.46c0,1.03-0.84,1.87-1.87,1.87H1.87C0.84,37.88,0,37.04,0,36.01V16.55C0,15.52,0.84,14.69,1.87,14.69L1.87,14.69z M0.47,42.19 h109.08c0.26,0,0.46,0.21,0.46,0.46l0,0v79.76c0,0.25-0.21,0.46-0.46,0.46l-109.08,0c-0.25,0-0.47-0.21-0.47-0.46V42.66 C0,42.4,0.21,42.19,0.47,42.19L0.47,42.19L0.47,42.19z M97.27,52.76H83.57c-0.83,0-1.5,0.63-1.5,1.4V66.9c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4V54.16C98.78,53.39,98.1,52.76,97.27,52.76L97.27,52.76z M12.24,74.93h13.7 c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H12.71c-0.83,0-1.5-0.63-1.5-1.4V75.87c0-0.77,0.68-1.4,1.5-1.4 L12.24,74.93L12.24,74.93z M12.24,97.11h13.7c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.24,0 c-0.83,0-1.5-0.63-1.5-1.4V98.51c0-0.77,0.68-1.4,1.5-1.4L12.24,97.11L12.24,97.11z M12.24,52.76h13.7c0.83,0,1.51,0.63,1.51,1.4 V66.9c0,0.77-0.68,1.4-1.51,1.4l-13.24,0c-0.83,0-1.5-0.63-1.5-1.4V54.16c0-0.77,0.68-1.4,1.5-1.4L12.24,52.76L12.24,52.76z M36.02,52.76h13.71c0.83,0,1.5,0.63,1.5,1.4V66.9c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16 C34.51,53.39,35.19,52.76,36.02,52.76L36.02,52.76L36.02,52.76z M36.02,74.93h13.71c0.83,0,1.5,0.63,1.5,1.4v12.74 c0,0.77-0.68,1.4-1.5,1.4H36.02c-0.83,0-1.51-0.63-1.51-1.4V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L36.02,74.93z M36.02,97.11h13.71 c0.83,0,1.5,0.63,1.5,1.4v12.74c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V98.51 C34.51,97.74,35.19,97.11,36.02,97.11L36.02,97.11L36.02,97.11z M59.79,52.76H73.5c0.83,0,1.51,0.63,1.51,1.4V66.9 c0,0.77-0.68,1.4-1.51,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16C58.29,53.39,58.96,52.76,59.79,52.76L59.79,52.76 L59.79,52.76z M59.79,74.93H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H59.79c-0.83,0-1.51-0.63-1.51-1.4 V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L59.79,74.93z M97.27,74.93H83.57c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4L97.27,74.93L97.27,74.93z M97.27,97.11H83.57 c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4 L97.27,97.11L97.27,97.11z M59.79,97.11H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.71,0 c-0.83,0-1.51-0.63-1.51-1.4V98.51C58.29,97.74,58.96,97.11,59.79,97.11L59.79,97.11L59.79,97.11z M7.01,47.71h96.92 c0.52,0,0.94,0.44,0.94,0.94v67.77c0,0.5-0.44,0.94-0.94,0.94H6.08c-0.5,0-0.94-0.42-0.94-0.94V49.58 C5.14,48.55,5.98,47.71,7.01,47.71L7.01,47.71L7.01,47.71z M78.8,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11l-0.03-0.41H73.58 l-0.03,0.41v10.16C73.55,27.54,75.91,29.4,78.8,29.4L78.8,29.4L78.8,29.4z M29.76,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11 l-0.03-0.41H24.53l-0.03,0.41v10.16C24.5,27.54,26.86,29.4,29.76,29.4L29.76,29.4z"
+                    />
+                  </g>
+                </svg>
+                <span id="scheduleButton">Schedule Assessment</span>
+              </a>
+            </li>
+            <li class="link-background remote-link">
+              <a
+                aria-label="SOS Remote link"
+                href="https://pawtech.screenconnect.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  version="1.1"
+                  id="remote-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 122.88 94.35"
+                  width="1.5rem"
+                  height="1.5rem"
+                  style="enable-background: new 0 0 122.88 94.35"
+                  xml:space="preserve"
+                  alt="Remote Icon"
+                  aria-labelledby="remoteButton"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      fill="white"
+                      class="st0"
+                      d="M90.37,26.48h25.48c1.94,0,3.71,0.79,4.97,2.06c1.28,1.28,2.06,3.04,2.06,4.97v53.82 c0,1.94-0.79,3.71-2.06,4.97c-1.28,1.28-3.04,2.06-4.97,2.06H90.37c-1.94,0-3.71-0.79-4.97-2.06c-1.28-1.28-2.06-3.04-2.06-4.97 V33.5c0-1.94,0.79-3.71,2.06-4.97C86.68,27.25,88.43,26.48,90.37,26.48L90.37,26.48z M3.05,0h106.12c1.68,0,3.05,1.37,3.05,3.05 v18.44h-6.48V8.44c0-1.48-1.21-2.7-2.7-2.7H9.17v0c-1.48,0-2.7,1.21-2.7,2.7v52.53c0,1.48,1.21,2.7,2.7,2.7H76.7V76.4H3.05 C1.37,76.4,0,75.03,0,73.35V3.05C0,1.37,1.37,0,3.05,0L3.05,0L3.05,0z M42.27,80.61h27.67c0.07,4.79,2.04,9.07,7.39,12.45H34.89 C39.16,89.96,42.29,86.19,42.27,80.61L42.27,80.61L42.27,80.61z M56.11,66.12c2.16,0,3.92,1.75,3.92,3.92 c0,2.16-1.76,3.92-3.92,3.92c-2.16,0-3.92-1.75-3.92-3.92C52.19,67.88,53.94,66.12,56.11,66.12L56.11,66.12z M103.1,85.72 c1.59,0,2.89,1.28,2.89,2.89c0,1.59-1.28,2.89-2.89,2.89c-1.59,0-2.89-1.28-2.89-2.89C100.21,87.02,101.49,85.72,103.1,85.72 L103.1,85.72z M86.3,83.52h33.61V37.37H86.3V83.52L86.3,83.52z"
+                    />
+                  </g>
+                </svg>
+                <span id="remoteButton">SOS / Remote Support</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main-content background-image">
+        <section class="main-section background-dark">
+          <header class="section-header">
+            <h2 class="section-title">This is who we are</h2>
+          </header>
+          <div>
+            <p>
+              Our staff have worked in animal healthcare and are intimately
+              familiar with the specific needs of your practice management
+              software.
+            </p>
+            <br />
+            <p>
+              Our experience as both veterinary and IT support professionals
+              gives us unique insight into how you can leverage technology to
+              provide the best quality of medicine possible.
+            </p>
+            <br />
+            <p>
+              We become not only your one stop shop for all IT related services,
+              but your strategic partner helping you bring your hospital to its
+              highest potential.
+            </p>
+          </div>
+        </section>
+        <section class="main-section">
+          <header class="services-header section-header background-glass">
+            <h2 class="section-title glass-text">This is what we do</h2>
+            <p class="glass-text">
+              We streamline your practice, working with you to ensure that we
+              provide the services that are the exact fit for your hospital’s
+              needs.
+            </p>
+          </header>
+          <section class="services">
+            <ul class="services-grid background-glass">
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/headset.png"
+                    alt="Helpdesk Icon"
+                  />
+                  <h3>24/7/365 system monitoring & human helpdesk</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+
+                  <p class="glass-text">
+                    At all times we keep an eye on your tech. From server
+                    shutdowns to hard-drive headaches, from system upgrades to
+                    firmware updates, we monitor your issues and needs in order
+                    to catch as many of them as possible before you even notice.
+                    Consider it preventative care for your computers.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    When problems inevitably do arise, you can reach out to our
+                    full-service helpdesk (included with every management plan).
+                    We quickly troubleshoot your clinic’s day-to-day issues, and
+                    get you back on track ASAP.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Gone are the days where you had to schedule a convenient
+                    time for both you and a technician to meet. We’re talking
+                    full remote support to all our clients—at no additional
+                    charge.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/security.svg"
+                    alt="Training Icon"
+                  />
+                  <h3>Cybersecurity</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Running a business in the 21st century means relying on
+                    tech, and relying on tech means engaging in robust security
+                    measures. Yet, security best practices are always changing
+                    and require constant updating. Furthermore, some
+                    veterinary-specific programs have special requirements when
+                    it comes to security products. To maximize digital safety,
+                    domain-specific knowledge is required.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    But you’re in luck—because you don’t have to worry about it!
+                    PawTech has decades of combined experience managing and
+                    securing vet-specific technology. Our multi-modal approach
+                    helps keep you protected from the worst.
+                  </p>
+                  <p class="glass-text">
+                    Let PawTech maintain a watchful eye over your important
+                    networks and data to ensure that you, and your clients,
+                    always have peace of mind.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/class.svg"
+                    alt="Devices Icon"
+                  />
+                  <h3>Software and security training</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    We don’t leave you hanging! We provide on-going training for
+                    any and all systems we provide, instituting workflow
+                    optimizations across all devices and programs in your
+                    practice. From new software to old, we help your team get
+                    the most out of their tools.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    When it comes to cybersecurity, like anything in medicine,
+                    it’s a team effort. Where the bits-n-bytes stop, your staff
+                    begins. Making sure everyone is up to date on cybersecurity
+                    best-practices is a priority of ours. We pride ourselves on
+                    making sure you have simple, easy-to-follow instructions on
+                    how you and your team can be the first line of defense
+                    against cyber-threats.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/chart.svg"
+                    alt="Security Icon"
+                  />
+                  <h3>Business continuity planning</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    What would you do if the power went out for your practice?
+                    Or if your building was struck by lightning—and all of your
+                    equipment was no longer functional?
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    How long can your practice survive without your medical
+                    records? A day? A week?
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    What if you could take advantage of options that would get
+                    you up and running in well under an hour?
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    No machine is perfect, and when your worst fears come to
+                    pass—when your server simply will not turn on after a storm;
+                    when the broadband service is down for the whole block—our
+                    business continuity plans ensure that the interruption to
+                    your day is minimal.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    With our on-site disaster recovery options, we can have your
+                    system up and running again in a matter of just a few
+                    minutes.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/task.svg"
+                    alt="Training Icon"
+                  />
+                  <h3>Seamless inter-clinic communication & data-sharing</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Whether you have one location or ten, regardless of if
+                    you’re always in the clinic or always on the road, our
+                    comprehensive integration solutions allow you and your staff
+                    to to share information, access records, and communicate
+                    effortlessly.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/cloud-hdd.svg"
+                    alt="Services Icon"
+                  />
+                  <h3>Cloud hosting (server, email, & data protection)</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    We can connect you to the cloud, customizing to your needs.
+                    Want to take advantage of public servers? We know the best
+                    options. Prefer to have a private server? We can get you set
+                    up.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    It’s not just about your data floating out there–we have a
+                    suite of robust, cloud-based solutions waiting for you.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Save time, money, and headaches with professional,
+                    customizable, and secure email addresses for you and your
+                    staff.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Make sure you never face that ultimate business nightmare:
+                    data loss. With our server-based systems your data is always
+                    protected, backed up, and secure, ensuring you have what you
+                    need, when you need it, always.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/card-payment.svg"
+                    alt="Management Icon"
+                  />
+                  <h3>Payment systems & compliance</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    No matter how you prefer to handle your business, we help
+                    you keep your payments streamlined. Cash, credit, checks, or
+                    apps—we’ve got you covered.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Not only that, we keep it simple and stress-free for you.
+                    Let our team handle PCI-DSS and other acronymic compliance
+                    tasks for you. Questionnaires can sometimes contain hundreds
+                    of arcane, time-consuming queries. Our staff is highly
+                    experienced in making sure you pass the test, both on paper
+                    and in practice.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/voip.svg"
+                    alt="Communication Icon"
+                  />
+                  <h3>Phone & fax systems</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Gone are the days of hiring someone to come run phone wiring
+                    all throughout your facility, leaving you with a line and
+                    not much else. Today, we use state-of-the-art VoIP phone
+                    technology. VoIP stands for “Voice over IP” and it’s
+                    basically phone-via-internet. It’s easier to install,
+                    configure, maintain, and–best of all–it’s more affordable
+                    (up to 50% more affordable!). you not only save on the costs
+                    of installation, calls themselves are significantly less
+                    expensive.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    With VoIP you can effortlessly customize your telephone
+                    system. Voicemail, messages, hold music–it’s all at your
+                    fingertips. You can even seamlessly transfer calls between
+                    practice locations, whether they’re next door, or in the
+                    next county.
+                  </p>
+                  <br />
+
+                  <p class="glass-text">
+                    We set you up with a full suite of phone features. All the
+                    traditional stuff you’re used to, plus call hold, call
+                    transfer, call hunt conference calling, find/follow me, and
+                    auto-attendant phone menus. We can even have your recordings
+                    voiced by professional voice actors.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Virtual faxing (also called IP faxing) is another feature of
+                    VoIP phone systems. Even in the age of email and instant
+                    communication, there are some instances when faxes are
+                    necessary. Without the need for paper or toner, you can send
+                    and receive faxes using the email account you already have
+                    with a hosted VoIP system.
+                  </p>
+                  <br />
+
+                  <p class="glass-text">
+                    Switching to VoIP means having your cake and eating it
+                    too–everything you like about traditional phones, plus all
+                    the benefits of modern features.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="services-grid services-more background-glass"
+              id="servicesMore"
+            >
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/job.svg"
+                    alt="Email Icon"
+                  />
+                  <h3>vCIO (Virtual Chief Information Officer) Services</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Let us be your strategic partner. One who not only knows the
+                    industry, but understands you, your needs, and the needs of
+                    your practice. We can help you achieve the veterinary
+                    practice of your dreams.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    This brings together all of our managed services, security,
+                    and regular consultations to explore new avenues of growth
+                    and efficiency for your business.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Our simple pricing is per veterinarian on staff
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/laptop-wrench.svg"
+                    alt="Hosting Icon"
+                  />
+                  <h3>Workflow Assessments</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Imagine a task you do every day, 25 times a day, 5 minutes
+                    every time.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Imagine if you only had to do it once. Or if it only took
+                    ten seconds each time. How much more productive would you
+                    and your staff be?
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Let us examine your workflow and suggest the best way to
+                    update it.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/business.svg"
+                    alt="Backup Icon"
+                  />
+                  <h3>Clinic Design Consultation</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Building a new clinic? Adding on an extension? Doing a
+                    renovation? Let us help you make sure that your wonderful
+                    new practice’s technological infrastructure is set up to
+                    meet your needs now and in the future.
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Speak with one of our engineers who can create a customized
+                    structured cabling plan to meet and exceed your needs not
+                    just for today or tomorrow, but for many years to come.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/conference.svg"
+                    alt="Card Icon"
+                  />
+                  <h3>Vendor Interface & Service Brokering</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    Instead of dragging your technician away from
+                    income-generating activities to have them sit on the phone
+                    with a vendor support line for hours, simply open a ticket
+                    with your assigned system administrator and let us take care
+                    of the issue while you take care of your patients!
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    Are you getting a good deal on your business class internet?
+                    Phone plan? Waiting room TV?
+                  </p>
+                  <br />
+                  <p class="glass-text">
+                    We work with hundreds of providers, and are experienced in
+                    helping you find not only the best quality of service
+                    available, but the best deal for you.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/monitor.svg"
+                    alt="VoIP Icon"
+                  />
+                  <h3>Service Contracts & Upgrades</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    We offer hardware service contracts to either supplement or
+                    replace a manufacturer's warranty. For example, just because
+                    you cannot get an extended warranty for your digital x-ray
+                    capture station, does not mean that you must go out and
+                    spend tens of thousands of dollars to get an entirely new
+                    setup to maintain peace of mind. We aim to find a solution
+                    before such drastic measures are required.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/desktop-pc.svg"
+                    alt="Phone Icon"
+                  />
+                  <h3>IT equipment procurement</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    If you thought we only dealt with cyberspace, think again!
+                    We have a passion for good hardware and helping you find the
+                    best physical solutions to your electronic needs. Laptops,
+                    desktops, routers, cameras, cables, etc. Whatever you need,
+                    we’ll help you find it.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="showText(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/recycle.png"
+                    alt="Workflow Icon"
+                  />
+                  <h3>Hardware recycling / donations</h3>
+                </button>
+                <div class="service-text">
+                  <div class="background-glass"></div>
+                  <p class="glass-text">
+                    When updating your clinic to the latest and greatest, we
+                    offer an option to give your old hardware a second life by
+                    refurbishing and donating to a non-profit animal care group
+                    in your community. If we cannot find a good home for your
+                    donations then we work with proper green reclamators to
+                    ensure that no computer ends up in a landfill and polluting
+                    our planet.
+                  </p>
+                  <button
+                    class="service-text-button glass-text"
+                    type="button"
+                    onclick="hideText(this.parentElement)"
+                  >
+                    Less
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <button class="services-button glass-text" onclick="showMore(this)">
+              See More
+            </button>
+          </section>
+        </section>
+        <section class="main-section background-dark">
+          <header class="section-header">
+            <h2 class="section-title">This is how we do it</h2>
+            <p class="how-subtitle">
+              <span class="">Man·aged Serv·ices</span> /ˈmænəʤd ˈsɜrvəsəz/ (n):
+              the outsourcing of vital IT services that require constant
+              maintenance and updating.
+            </p>
+          </header>
+
+          <div class="how-text flex">
+            <p class="">
+              Just like you administer preventative wellness care to your
+              patients—avoiding and catching small problems before they become
+              big ones—we do this for every facet of your computer systems with
+              ‘round the clock, 365 day monitoring and maintenance.
+            </p>
+
+            <p class="">
+              We don’t stop there. We work closely with industry leaders in the
+              field of veterinary technology, keeping on the cutting edge and
+              connecting you with the best solutions out there.
+            </p>
+          </div>
+        </section>
+        <section class="main-section">
+          <header class="section-header background-glass">
+            <h2 class="section-title glass-text">This is who we help</h2>
+            <span class="section-subtitle glass-text"
+              >We help clinics at all stages of life</span
+            >
+            <p class="glass-text">
+              Whether you’re just starting-up or a mature hospital, PawTech has
+              the solutions to help you start growing, or grow even bigger.
+            </p>
+          </header>
+          <div>
+            <ul class="who-grid background-glass">
+              <li class="who-col">
+                <img loading="lazy" src="img/icons/business.svg" alt="Icon" />
+                <h3>General Practices</h3>
+                <p>
+                  As general practitioners you have enough to worry about with
+                  keeping your practice well versed in almost all facets of
+                  veterinary medicine. As such, you need a team of professionals
+                  who are experienced with everything in your practice, from
+                  analyzers, to digital imaging solutions, to endoscopic
+                  processors, and all of the many integration solutions that you
+                  use every day to keep you and your patients thriving.
+                </p>
+              </li>
+              <li class="who-col">
+                <img loading="lazy" src="img/icons/job.svg" alt="Icon" />
+                <h3>Corporate Practice / Management Groups</h3>
+                <p>
+                  We leverage group purchasing power for every aspect of our
+                  business, so of course we look for the same type of benefits
+                  in our support structure. Reach out to us to see if we can
+                  provide your group with special rates. Management groups, we
+                  encourage you to reach out and see how we can keep all of your
+                  practices safe and secure.
+                </p>
+              </li>
+
+              <li class="who-col">
+                <img loading="lazy" src="img/icons/mobile.svg" alt="Icon" />
+                <h3>Mobile Practices</h3>
+                <p>
+                  When you’re on the move, things can get a little
+                  unpredictable, but at least your data is one thing you won’t
+                  have to worry about. We can ensure that wherever you are your
+                  practice’s data is safe and secure in the cloud. Not only
+                  that, if a device is ever lost or stolen, we can track it as
+                  well as ensure that all data is locked down, away from prying
+                  eyes.
+                </p>
+              </li>
+              <li class="who-col">
+                <img loading="lazy" src="img/icons/conference.svg" alt="Icon" />
+                <h3>Practice Groups / Multi-Location Hospitals</h3>
+                <p>
+                  Whether you have 2 locations or 10, our comprehensive
+                  integration solutions can allow every member of your staff to
+                  communicate and share information effortlessly, with full
+                  access to your patients’ entire history, no matter where you
+                  see them.
+                </p>
+              </li>
+              <li class="who-col">
+                <img loading="lazy" src="img/icons/rocket.svg" alt="Icon" />
+                <h3>Start-Up Clinics</h3>
+                <p>
+                  Whether you’ve just opened your doors, or you plan to open
+                  them later in the year, we can get you running smoothly from
+                  day one.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section background-dark">
+          <header class="partners-header section-header">
+            <h2 class="partners-h2 section-title flex">
+              Some of our trusted <span>veterinary partners</span>
+            </h2>
+          </header>
+          <div class="partners-list">
+            <div class="partners-col">
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/gravity-payments_veterinary-logo.png"
+                  alt="gravity"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/next-line.jpg"
+                  alt="Next in Line"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/anipanion-logo-web.png"
+                  alt="anipanion"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/second-nature-logo-web.png"
+                  alt="Second Nature"
+                />
+              </div>
+            </div>
+            <div class="partners-col">
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/SignalPet.png"
+                  alt="SignalPET"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/Talkatoo-Logo-web.png"
+                  alt="talkatoo"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/Vetology-Logo-1.jpg"
+                  alt="Vetology"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="img/partner-logos/WeaveLogoDarkGray.jpg"
+                  alt="weave"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="main-section background-image contact-image"
+          id="contact"
+        >
+          <div class="contact-content background-dark">
+            <header class="section-header">
+              <h2>Let's Talk</h2>
+              <span>Our team is here to help.</span>
+            </header>
+            <div>
+              <p>
+                When you get in touch with us we start a dialogue, taking time
+                to understand the specific needs of your practice, personalizing
+                the service we provide you, and ensuring that you can forget the
+                tech and focus on delivering the best medical care for your
+                patients.
+              </p>
+            </div>
+
+            <section class="contact-info">
+              <div class="contact-number flex">
+                <img
+                  loading="lazy"
+                  width="48"
+                  height="48"
+                  src="img/icons/phone.png"
+                  alt="Call Icon"
+                />
+                <span>Call</span>
+                <a class="" href="tel:201-564-4500"> (201) 564-4500 </a>
+              </div>
+              <div class="contact-email flex">
+                <img
+                  loading="lazy"
+                  width="48"
+                  height="48"
+                  src="img/icons/mail.png"
+                  alt="Email Icon"
+                />
+                <span>Email</span>
+                <span
+                  ><a
+                    class="contact-add"
                     href="mail@mail.com"
                     data-part1="Y29udGFjdA=="
                     data-part2="cGF3dGVjaA=="
                     data-part3="Y28="
                     data-subject="Paw%20Tech%20Inquiry"
-                    ><b class="hide" aria-hidden="true">honey</b>
-                    <svg
-                        version="1.1"
-                        id="schedule-svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        width="1.5rem"
-                        height="1.5rem"
-                        viewBox="0 0 110.01 122.88"
-                        style="enable-background: new 0 0 110.01 122.88"
-                        xml:space="preserve"
-                        alt="Schedule Icon"
-                        aria-labelledby="scheduleButton"
-                    >
-                        <style type="text/css">
-                            .st0 {
-                                fill-rule: evenodd;
-                                clip-rule: evenodd;
-                            }
-                        </style>
-                        <g>
-                            <path
-                                fill="white"
-                                class="st0"
-                                d="M1.87,14.69h22.66L24.5,14.3V4.13C24.5,1.86,26.86,0,29.76,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39 h38.59l-0.03-0.39V4.13C73.55,1.86,75.91,0,78.8,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39h24.11c1.03,0,1.87,0.84,1.87,1.87 v19.46c0,1.03-0.84,1.87-1.87,1.87H1.87C0.84,37.88,0,37.04,0,36.01V16.55C0,15.52,0.84,14.69,1.87,14.69L1.87,14.69z M0.47,42.19 h109.08c0.26,0,0.46,0.21,0.46,0.46l0,0v79.76c0,0.25-0.21,0.46-0.46,0.46l-109.08,0c-0.25,0-0.47-0.21-0.47-0.46V42.66 C0,42.4,0.21,42.19,0.47,42.19L0.47,42.19L0.47,42.19z M97.27,52.76H83.57c-0.83,0-1.5,0.63-1.5,1.4V66.9c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4V54.16C98.78,53.39,98.1,52.76,97.27,52.76L97.27,52.76z M12.24,74.93h13.7 c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H12.71c-0.83,0-1.5-0.63-1.5-1.4V75.87c0-0.77,0.68-1.4,1.5-1.4 L12.24,74.93L12.24,74.93z M12.24,97.11h13.7c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.24,0 c-0.83,0-1.5-0.63-1.5-1.4V98.51c0-0.77,0.68-1.4,1.5-1.4L12.24,97.11L12.24,97.11z M12.24,52.76h13.7c0.83,0,1.51,0.63,1.51,1.4 V66.9c0,0.77-0.68,1.4-1.51,1.4l-13.24,0c-0.83,0-1.5-0.63-1.5-1.4V54.16c0-0.77,0.68-1.4,1.5-1.4L12.24,52.76L12.24,52.76z M36.02,52.76h13.71c0.83,0,1.5,0.63,1.5,1.4V66.9c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16 C34.51,53.39,35.19,52.76,36.02,52.76L36.02,52.76L36.02,52.76z M36.02,74.93h13.71c0.83,0,1.5,0.63,1.5,1.4v12.74 c0,0.77-0.68,1.4-1.5,1.4H36.02c-0.83,0-1.51-0.63-1.51-1.4V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L36.02,74.93z M36.02,97.11h13.71 c0.83,0,1.5,0.63,1.5,1.4v12.74c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V98.51 C34.51,97.74,35.19,97.11,36.02,97.11L36.02,97.11L36.02,97.11z M59.79,52.76H73.5c0.83,0,1.51,0.63,1.51,1.4V66.9 c0,0.77-0.68,1.4-1.51,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16C58.29,53.39,58.96,52.76,59.79,52.76L59.79,52.76 L59.79,52.76z M59.79,74.93H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H59.79c-0.83,0-1.51-0.63-1.51-1.4 V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L59.79,74.93z M97.27,74.93H83.57c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4L97.27,74.93L97.27,74.93z M97.27,97.11H83.57 c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4 L97.27,97.11L97.27,97.11z M59.79,97.11H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.71,0 c-0.83,0-1.51-0.63-1.51-1.4V98.51C58.29,97.74,58.96,97.11,59.79,97.11L59.79,97.11L59.79,97.11z M7.01,47.71h96.92 c0.52,0,0.94,0.44,0.94,0.94v67.77c0,0.5-0.44,0.94-0.94,0.94H6.08c-0.5,0-0.94-0.42-0.94-0.94V49.58 C5.14,48.55,5.98,47.71,7.01,47.71L7.01,47.71L7.01,47.71z M78.8,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11l-0.03-0.41H73.58 l-0.03,0.41v10.16C73.55,27.54,75.91,29.4,78.8,29.4L78.8,29.4L78.8,29.4z M29.76,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11 l-0.03-0.41H24.53l-0.03,0.41v10.16C24.5,27.54,26.86,29.4,29.76,29.4L29.76,29.4z"
-                            />
-                        </g>
-                    </svg>
-                    <span id="scheduleButton"
-                        >Schedule Assessment</span
-                    >
-                </a>
-                </li>
-                <li class="link-background remote-link">
-                    <a
-					
-						aria-label="SOS Remote link"
-						href="https://pawtech.screenconnect.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<svg
-							version="1.1"
-							id="remote-svg"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							x="0px"
-							y="0px"
-							viewBox="0 0 122.88 94.35"
-							width="1.5rem"
-							height="1.5rem"
-							style="enable-background: new 0 0 122.88 94.35"
-							xml:space="preserve"
-							alt="Remote Icon"
-							aria-labelledby="remoteButton"
-						>
-							<style type="text/css">
-								.st0 {
-									fill-rule: evenodd;
-									clip-rule: evenodd;
-								}
-							</style>
-							<g>
-								<path
-									fill="white"
-									class="st0"
-									d="M90.37,26.48h25.48c1.94,0,3.71,0.79,4.97,2.06c1.28,1.28,2.06,3.04,2.06,4.97v53.82 c0,1.94-0.79,3.71-2.06,4.97c-1.28,1.28-3.04,2.06-4.97,2.06H90.37c-1.94,0-3.71-0.79-4.97-2.06c-1.28-1.28-2.06-3.04-2.06-4.97 V33.5c0-1.94,0.79-3.71,2.06-4.97C86.68,27.25,88.43,26.48,90.37,26.48L90.37,26.48z M3.05,0h106.12c1.68,0,3.05,1.37,3.05,3.05 v18.44h-6.48V8.44c0-1.48-1.21-2.7-2.7-2.7H9.17v0c-1.48,0-2.7,1.21-2.7,2.7v52.53c0,1.48,1.21,2.7,2.7,2.7H76.7V76.4H3.05 C1.37,76.4,0,75.03,0,73.35V3.05C0,1.37,1.37,0,3.05,0L3.05,0L3.05,0z M42.27,80.61h27.67c0.07,4.79,2.04,9.07,7.39,12.45H34.89 C39.16,89.96,42.29,86.19,42.27,80.61L42.27,80.61L42.27,80.61z M56.11,66.12c2.16,0,3.92,1.75,3.92,3.92 c0,2.16-1.76,3.92-3.92,3.92c-2.16,0-3.92-1.75-3.92-3.92C52.19,67.88,53.94,66.12,56.11,66.12L56.11,66.12z M103.1,85.72 c1.59,0,2.89,1.28,2.89,2.89c0,1.59-1.28,2.89-2.89,2.89c-1.59,0-2.89-1.28-2.89-2.89C100.21,87.02,101.49,85.72,103.1,85.72 L103.1,85.72z M86.3,83.52h33.61V37.37H86.3V83.52L86.3,83.52z"
-								/>
-							</g>
-						</svg>
-						<span id="remoteButton"
-							>SOS / Remote Support</span
-						>
-					</a>
-                </li>
-
-            </ul>
-        </nav>
-        <hgroup>
-            <p class="subtitle">VETERINARY I.T. SUPPORT SERVICES</p>
-            <hr />
-            <div class="subtitle-description">
-                <a
-                    href=""
-                    class="typewrite"
-                    data-period="500"
-                    data-type='["> We are the vet tech experts. \n  A full IT service provider. \n  Catering to","", " animal hospitals"," veterinary clinics"," mobile veterinary practices"," veterinary professionals.\n> That’s all we do. "]'
+                    ><b class="block-spam" aria-hidden="true">honey</b></a
+                  ></span
                 >
-                    <span class="wrap"></span>
-                </a>
-            </div>
-        </hgroup>
-        <section class="animal-container">
-            <img loading="lazy" class="mouse" src="img/animals/rat.webp" alt="mouse" />
-            <img loading="lazy" class="lizard" src="img/animals/lizard.webp" alt="lizard" />
-            <img loading="lazy" class="bird" src="img/animals/bird.webp" alt="bird" />
-            <img loading="lazy" class="cat" src="img/animals/cat.webp" alt="cat" />
-            <img loading="lazy" class="pup" src="img/animals/dog.webp" alt="puppy" />
+              </div>
+            </section>
+          </div>
         </section>
-    </header>
-    <main>
-        <header class="sticky-header">
-            <a class="logo-container" href="#home" title="Top of Page" alt="PawTech">
-                <img src="img/site-logo/logo_text-2.webp" alt="">
-                <!-- <div class="logo-animation-outer">
-                    <div class="logo-animation-inner"></div>
-                </div> -->
-            </a>
-            <nav>
-                <ul>
-                    <li class="link-background">
-                        <a aria-label="telephone link" href="tel:+2015644500">
-                            <svg
-                                version="1.1"
-                                id="phone-svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                width="1.5rem"
-                                height="1.5rem"
-                                viewBox="0 0 118.875 122.877"
-                                xml:space="preserve"
-                                alt="Call Icon"
-                                aria-labelledby="phoneNumber"
-                            >
-                                <g>
-                                    <path
-                                        fill="white"
-                                        d="M1.432,20.714c9.427,6.476,18.779,12.989,26.673,21.375 C23.58,62.076,41.64,78.045,58.111,87.453c6.448,3.683,9.298,6.265,16.476,5.024l28.268,27.696 C49.657,138.039-10.045,63.084,1.432,20.714L1.432,20.714z M81.874,85.356l6.201-6.298c1.788-1.819,4.74-1.842,6.559-0.053 l22.862,22.509c1.818,1.789,1.841,4.741,0.053,6.559l-6.203,6.299c-1.789,1.818-4.741,1.841-6.56,0.052L81.924,91.915 C80.105,90.127,80.083,87.175,81.874,85.356L81.874,85.356z M7.004,7.467l4.5-5.464c1.929-2.342,5.425-2.68,7.767-0.751 l23.405,19.281c2.342,1.931,2.677,5.425,0.75,7.77l-4.502,5.461c-1.93,2.345-5.425,2.68-7.768,0.751L7.755,15.234 C5.413,13.305,5.073,9.809,7.004,7.467L7.004,7.467z"
-                                    />
-                                </g>
-                            </svg>
-                            <span id="phoneNumber">(201) 564-4500</span>
-                        </a>
-                    </li>
-                    <li class="link-background">
-                        <a
-                        aria-label="email link"
-                        href="mail@mail.com"
-                        data-part1="Y29udGFjdA=="
-                        data-part2="cGF3dGVjaA=="
-                        data-part3="Y28="
-                        data-subject="Paw%20Tech%20Inquiry"
-                        ><b class="hide" aria-hidden="true">honey</b>
-                        <svg
-                            version="1.1"
-                            id="schedule-svg"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px"
-                            y="0px"
-                            width="1.5rem"
-                            height="1.5rem"
-                            viewBox="0 0 110.01 122.88"
-                            style="enable-background: new 0 0 110.01 122.88"
-                            xml:space="preserve"
-                            alt="Schedule Icon"
-                            aria-labelledby="scheduleButton"
-                        >
-                            <style type="text/css">
-                                .st0 {
-                                    fill-rule: evenodd;
-                                    clip-rule: evenodd;
-                                }
-                            </style>
-                            <g>
-                                <path
-                                    fill="white"
-                                    class="st0"
-                                    d="M1.87,14.69h22.66L24.5,14.3V4.13C24.5,1.86,26.86,0,29.76,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39 h38.59l-0.03-0.39V4.13C73.55,1.86,75.91,0,78.8,0c2.89,0,5.26,1.87,5.26,4.13V14.3l-0.03,0.39h24.11c1.03,0,1.87,0.84,1.87,1.87 v19.46c0,1.03-0.84,1.87-1.87,1.87H1.87C0.84,37.88,0,37.04,0,36.01V16.55C0,15.52,0.84,14.69,1.87,14.69L1.87,14.69z M0.47,42.19 h109.08c0.26,0,0.46,0.21,0.46,0.46l0,0v79.76c0,0.25-0.21,0.46-0.46,0.46l-109.08,0c-0.25,0-0.47-0.21-0.47-0.46V42.66 C0,42.4,0.21,42.19,0.47,42.19L0.47,42.19L0.47,42.19z M97.27,52.76H83.57c-0.83,0-1.5,0.63-1.5,1.4V66.9c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4V54.16C98.78,53.39,98.1,52.76,97.27,52.76L97.27,52.76z M12.24,74.93h13.7 c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H12.71c-0.83,0-1.5-0.63-1.5-1.4V75.87c0-0.77,0.68-1.4,1.5-1.4 L12.24,74.93L12.24,74.93z M12.24,97.11h13.7c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.24,0 c-0.83,0-1.5-0.63-1.5-1.4V98.51c0-0.77,0.68-1.4,1.5-1.4L12.24,97.11L12.24,97.11z M12.24,52.76h13.7c0.83,0,1.51,0.63,1.51,1.4 V66.9c0,0.77-0.68,1.4-1.51,1.4l-13.24,0c-0.83,0-1.5-0.63-1.5-1.4V54.16c0-0.77,0.68-1.4,1.5-1.4L12.24,52.76L12.24,52.76z M36.02,52.76h13.71c0.83,0,1.5,0.63,1.5,1.4V66.9c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16 C34.51,53.39,35.19,52.76,36.02,52.76L36.02,52.76L36.02,52.76z M36.02,74.93h13.71c0.83,0,1.5,0.63,1.5,1.4v12.74 c0,0.77-0.68,1.4-1.5,1.4H36.02c-0.83,0-1.51-0.63-1.51-1.4V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L36.02,74.93z M36.02,97.11h13.71 c0.83,0,1.5,0.63,1.5,1.4v12.74c0,0.77-0.68,1.4-1.5,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V98.51 C34.51,97.74,35.19,97.11,36.02,97.11L36.02,97.11L36.02,97.11z M59.79,52.76H73.5c0.83,0,1.51,0.63,1.51,1.4V66.9 c0,0.77-0.68,1.4-1.51,1.4l-13.71,0c-0.83,0-1.51-0.63-1.51-1.4V54.16C58.29,53.39,58.96,52.76,59.79,52.76L59.79,52.76 L59.79,52.76z M59.79,74.93H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4H59.79c-0.83,0-1.51-0.63-1.51-1.4 V75.87c0-0.77,0.68-1.4,1.51-1.4V74.93L59.79,74.93z M97.27,74.93H83.57c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4 h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4L97.27,74.93L97.27,74.93z M97.27,97.11H83.57 c-0.83,0-1.5,0.63-1.5,1.4v12.74c0,0.77,0.67,1.4,1.5,1.4h13.71c0.83,0,1.51-0.63,1.51-1.4l0-13.21c0-0.77-0.68-1.4-1.51-1.4 L97.27,97.11L97.27,97.11z M59.79,97.11H73.5c0.83,0,1.51,0.63,1.51,1.4v12.74c0,0.77-0.68,1.4-1.51,1.4l-13.71,0 c-0.83,0-1.51-0.63-1.51-1.4V98.51C58.29,97.74,58.96,97.11,59.79,97.11L59.79,97.11L59.79,97.11z M7.01,47.71h96.92 c0.52,0,0.94,0.44,0.94,0.94v67.77c0,0.5-0.44,0.94-0.94,0.94H6.08c-0.5,0-0.94-0.42-0.94-0.94V49.58 C5.14,48.55,5.98,47.71,7.01,47.71L7.01,47.71L7.01,47.71z M78.8,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11l-0.03-0.41H73.58 l-0.03,0.41v10.16C73.55,27.54,75.91,29.4,78.8,29.4L78.8,29.4L78.8,29.4z M29.76,29.4c2.89,0,5.26-1.87,5.26-4.13V15.11 l-0.03-0.41H24.53l-0.03,0.41v10.16C24.5,27.54,26.86,29.4,29.76,29.4L29.76,29.4z"
-                                />
-                            </g>
-                        </svg>
-                        <span id="scheduleButton"
-                            >Schedule Assessment</span
-                        >
-                    </a>
-                    </li>
-                    <li class="link-background remote-link">
-                        <a
-                        
-                            aria-label="SOS Remote link"
-                            href="https://pawtech.screenconnect.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <svg
-                                version="1.1"
-                                id="remote-svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 122.88 94.35"
-                                width="1.5rem"
-                                height="1.5rem"
-                                style="enable-background: new 0 0 122.88 94.35"
-                                xml:space="preserve"
-                                alt="Remote Icon"
-                                aria-labelledby="remoteButton"
-                            >
-                                <style type="text/css">
-                                    .st0 {
-                                        fill-rule: evenodd;
-                                        clip-rule: evenodd;
-                                    }
-                                </style>
-                                <g>
-                                    <path
-                                        fill="white"
-                                        class="st0"
-                                        d="M90.37,26.48h25.48c1.94,0,3.71,0.79,4.97,2.06c1.28,1.28,2.06,3.04,2.06,4.97v53.82 c0,1.94-0.79,3.71-2.06,4.97c-1.28,1.28-3.04,2.06-4.97,2.06H90.37c-1.94,0-3.71-0.79-4.97-2.06c-1.28-1.28-2.06-3.04-2.06-4.97 V33.5c0-1.94,0.79-3.71,2.06-4.97C86.68,27.25,88.43,26.48,90.37,26.48L90.37,26.48z M3.05,0h106.12c1.68,0,3.05,1.37,3.05,3.05 v18.44h-6.48V8.44c0-1.48-1.21-2.7-2.7-2.7H9.17v0c-1.48,0-2.7,1.21-2.7,2.7v52.53c0,1.48,1.21,2.7,2.7,2.7H76.7V76.4H3.05 C1.37,76.4,0,75.03,0,73.35V3.05C0,1.37,1.37,0,3.05,0L3.05,0L3.05,0z M42.27,80.61h27.67c0.07,4.79,2.04,9.07,7.39,12.45H34.89 C39.16,89.96,42.29,86.19,42.27,80.61L42.27,80.61L42.27,80.61z M56.11,66.12c2.16,0,3.92,1.75,3.92,3.92 c0,2.16-1.76,3.92-3.92,3.92c-2.16,0-3.92-1.75-3.92-3.92C52.19,67.88,53.94,66.12,56.11,66.12L56.11,66.12z M103.1,85.72 c1.59,0,2.89,1.28,2.89,2.89c0,1.59-1.28,2.89-2.89,2.89c-1.59,0-2.89-1.28-2.89-2.89C100.21,87.02,101.49,85.72,103.1,85.72 L103.1,85.72z M86.3,83.52h33.61V37.37H86.3V83.52L86.3,83.52z"
-                                    />
-                                </g>
-                            </svg>
-                            <span id="remoteButton"
-                                >SOS / Remote Support</span
-                            >
-                        </a>
-                    </li>
-    
-                </ul>
-            </nav>
-        </header>
-        <section class="main-content background-image">
-            <section class="main-section background-dark">
-				<header class="section-header">
-					<h2 class="section-title">This is who we are</h2>
-				</header>
-				<div>
-					<p>
-						Our staff have worked in animal healthcare and are intimately
-						familiar with the specific needs of your practice management
-						software.
-					</p>
-					<br />
-					<p>
-						Our experience as both veterinary and IT support professionals gives
-						us unique insight into how you can leverage technology to provide
-						the best quality of medicine possible.
-					</p>
-					<br />
-					<p>
-						We become not only your one stop shop for all IT related services,
-						but your strategic partner helping you bring your hospital to its
-						highest potential.
-					</p>
-				</div>
-			</section>
-            <section class="main-section">
-                <header class="services-header section-header background-glass">
-                        <h2 class="section-title glass-text">This is what we do</h2>
-                        <p class="glass-text">
-                            We streamline your practice, working with you to ensure that we
-                            provide the services that are the exact fit for your hospital’s
-                            needs.
-                        </p>
-                </header>
-                <section class="services">
-              
-					<ul class="services-grid background-glass">
-                        
-						<li >
-                            <div class="background-glass"></div>
-							<button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/headset.png"
-									alt="Helpdesk Icon"
-								/>
-								<h3>24/7/365 system monitoring & human helpdesk</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div>
-                                
-                                <p class="glass-text">
-                                    At all times we keep an eye on your tech. From server shutdowns
-                                    to hard-drive headaches, from system upgrades to firmware
-                                    updates, we monitor your issues and needs in order to catch as
-                                    many of them as possible before you even notice. Consider it
-                                    preventative care for your computers.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    When problems inevitably do arise, you can reach out to our
-                                    full-service helpdesk (included with every management plan). We
-                                    quickly troubleshoot your clinic’s day-to-day issues, and get
-                                    you back on track ASAP.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Gone are the days where you had to schedule a convenient time
-                                    for both you and a technician to meet. We’re talking full remote
-                                    support to all our clients—at no additional charge.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/security.svg"
-									alt="Training Icon"
-								/>
-								<h3>Cybersecurity</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div>
-                                <p class="glass-text">
-                                    Running a business in the 21st century means relying on tech,
-                                    and relying on tech means engaging in robust security measures.
-                                    Yet, security best practices are always changing and require
-                                    constant updating. Furthermore, some veterinary-specific
-                                    programs have special requirements when it comes to security
-                                    products. To maximize digital safety, domain-specific knowledge
-                                    is required.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    But you’re in luck—because you don’t have to worry about it!
-                                    PawTech has decades of combined experience managing and securing
-                                    vet-specific technology. Our multi-modal approach helps keep you
-                                    protected from the worst.
-                                </p>
-                                <p class="glass-text">
-                                    Let PawTech maintain a watchful eye over your important networks
-                                    and data to ensure that you, and your clients, always have peace
-                                    of mind.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-							<div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/class.svg"
-									alt="Devices Icon"
-								/>
-								<h3>Software and security training</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div>
-                                <p class="glass-text">
-                                    We don’t leave you hanging! We provide on-going training for any
-                                    and all systems we provide, instituting workflow optimizations
-                                    across all devices and programs in your practice. From new
-                                    software to old, we help your team get the most out of their
-                                    tools.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    When it comes to cybersecurity, like anything in medicine, it’s
-                                    a team effort. Where the bits-n-bytes stop, your staff begins.
-                                    Making sure everyone is up to date on cybersecurity
-                                    best-practices is a priority of ours. We pride ourselves on
-                                    making sure you have simple, easy-to-follow instructions on how
-                                    you and your team can be the first line of defense against
-                                    cyber-threats.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/chart.svg"
-									alt="Security Icon"
-								/>
-								<h3>Business continuity planning</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    What would you do if the power went out for your practice? Or if
-                                    your building was struck by lightning—and all of your equipment
-                                    was no longer functional?
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    How long can your practice survive without your medical records?
-                                    A day? A week?
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    What if you could take advantage of options that would get you
-                                    up and running in well under an hour?
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    No machine is perfect, and when your worst fears come to
-                                    pass—when your server simply will not turn on after a storm;
-                                    when the broadband service is down for the whole block—our
-                                    business continuity plans ensure that the interruption to your
-                                    day is minimal.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    With our on-site disaster recovery options, we can have your
-                                    system up and running again in a matter of just a few minutes.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/task.svg"
-									alt="Training Icon"
-								/>
-								<h3>Seamless inter-clinic communication & data-sharing</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Whether you have one location or ten, regardless of if you’re
-                                    always in the clinic or always on the road, our comprehensive
-                                    integration solutions allow you and your staff to to share
-                                    information, access records, and communicate effortlessly.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-    
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/cloud-hdd.svg"
-									alt="Services Icon"
-								/>
-								<h3>Cloud hosting (server, email, & data protection)</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    We can connect you to the cloud, customizing to your needs. Want
-                                    to take advantage of public servers? We know the best options.
-                                    Prefer to have a private server? We can get you set up.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    It’s not just about your data floating out there–we have a suite
-                                    of robust, cloud-based solutions waiting for you.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Save time, money, and headaches with professional, customizable,
-                                    and secure email addresses for you and your staff.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Make sure you never face that ultimate business nightmare: data
-                                    loss. With our server-based systems your data is always
-                                    protected, backed up, and secure, ensuring you have what you
-                                    need, when you need it, always.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/card-payment.svg"
-									alt="Management Icon"
-								/>
-								<h3>Payment systems & compliance</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-								No matter how you prefer to handle your business, we help you
-								keep your payments streamlined. Cash, credit, checks, or
-								apps—we’ve got you covered.
-							</p>
-							<br />
-                            <p class="glass-text">
-								Not only that, we keep it simple and stress-free for you. Let
-								our team handle PCI-DSS and other acronymic compliance tasks for
-								you. Questionnaires can sometimes contain hundreds of arcane,
-								time-consuming queries. Our staff is highly experienced in
-								making sure you pass the test, both on paper and in practice.
-							</p>
-                            <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                Less
-                              </button>
-						</div>
-						</li>
-						<li>
-							<div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/voip.svg"
-									alt="Communication Icon"
-								/>
-								<h3>Phone & fax systems</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Gone are the days of hiring someone to come run phone wiring all
-                                    throughout your facility, leaving you with a line and not much
-                                    else. Today, we use state-of-the-art VoIP phone technology. VoIP
-                                    stands for “Voice over IP” and it’s basically
-                                    phone-via-internet. It’s easier to install, configure, maintain,
-                                    and–best of all–it’s more affordable (up to 50% more
-                                    affordable!). you not only save on the costs of installation,
-                                    calls themselves are significantly less expensive.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    With VoIP you can effortlessly customize your telephone system.
-                                    Voicemail, messages, hold music–it’s all at your fingertips. You
-                                    can even seamlessly transfer calls between practice locations,
-                                    whether they’re next door, or in the next county.
-                                </p>
-                                <br />
-                              
-                                <p class="glass-text">
-                                    We set you up with a full suite of phone features. All the
-                                    traditional stuff you’re used to, plus call hold, call transfer,
-                                    call hunt conference calling, find/follow me, and auto-attendant
-                                    phone menus. We can even have your recordings voiced by
-                                    professional voice actors.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Virtual faxing (also called IP faxing) is another feature of
-                                    VoIP phone systems. Even in the age of email and instant
-                                    communication, there are some instances when faxes are
-                                    necessary. Without the need for paper or toner, you can send and
-                                    receive faxes using the email account you already have with a
-                                    hosted VoIP system.
-                                </p>
-                                <br />
-                                
-                                <p class="glass-text">
-                                    Switching to VoIP means having your cake and eating it
-                                    too–everything you like about traditional phones, plus all the
-                                    benefits of modern features.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-					</ul>
-					<ul class="services-grid services-more background-glass" id="servicesMore">
-                    
-						<li>
-							<div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img loading="lazy" src="img/icons/job.svg" alt="Email Icon" />
-								<h3>vCIO (Virtual Chief Information Officer) Services</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Let us be your strategic partner. One who not only knows the
-                                    industry, but understands you, your needs, and the needs of your
-                                    practice. We can help you achieve the veterinary practice of
-                                    your dreams.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    This brings together all of our managed services, security, and
-                                    regular consultations to explore new avenues of growth and
-                                    efficiency for your business.
-                                </p>
-                                <br />
-                                <p class="glass-text">Our simple pricing is per veterinarian on staff</p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/laptop-wrench.svg"
-									alt="Hosting Icon"
-								/>
-								<h3>Workflow Assessments</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Imagine a task you do every day, 25 times a day, 5 minutes every
-                                    time.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Imagine if you only had to do it once. Or if it only took ten
-                                    seconds each time. How much more productive would you and your
-                                    staff be?
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Let us examine your workflow and suggest the best way to update
-                                    it.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/business.svg"
-									alt="Backup Icon"
-								/>
-								<h3>Clinic Design Consultation</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Building a new clinic? Adding on an extension? Doing a
-                                    renovation? Let us help you make sure that your wonderful new
-                                    practice’s technological infrastructure is set up to meet your
-                                    needs now and in the future.
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Speak with one of our engineers who can create a customized
-                                    structured cabling plan to meet and exceed your needs not just
-                                    for today or tomorrow, but for many years to come.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-							<div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/conference.svg"
-									alt="Card Icon"
-								/>
-								<h3>Vendor Interface & Service Brokering</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    Instead of dragging your technician away from income-generating
-                                    activities to have them sit on the phone with a vendor support
-                                    line for hours, simply open a ticket with your assigned system
-                                    administrator and let us take care of the issue while you take
-                                    care of your patients!
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    Are you getting a good deal on your business class internet?
-                                    Phone plan? Waiting room TV?
-                                </p>
-                                <br />
-                                <p class="glass-text">
-                                    We work with hundreds of providers, and are experienced in
-                                    helping you find not only the best quality of service available,
-                                    but the best deal for you.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/monitor.svg"
-									alt="VoIP Icon"
-								/>
-								<h3>Service Contracts & Upgrades</h3>
-                            </button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    We offer hardware service contracts to either supplement or
-                                    replace a manufacturer's warranty. For example, just because you
-                                    cannot get an extended warranty for your digital x-ray capture
-                                    station, does not mean that you must go out and spend tens of
-                                    thousands of dollars to get an entirely new setup to maintain
-                                    peace of mind. We aim to find a solution before such drastic
-                                    measures are required.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-							<div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/desktop-pc.svg"
-									alt="Phone Icon"
-								/>
-								<h3>IT equipment procurement</h3>
-							</button>
-                            <div class="service-text">
-                                <div class="background-glass"></div><p class="glass-text">
-                                    If you thought we only dealt with cyberspace, think again! We
-                                    have a passion for good hardware and helping you find the best
-                                    physical solutions to your electronic needs. Laptops, desktops,
-                                    routers, cameras, cables, etc. Whatever you need, we’ll help you
-                                    find it.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-						<li>
-                            <div class="background-glass"></div>
-                            <button class="service-link glass-text" onclick="showText(this.nextElementSibling)">
-								<img
-									loading="lazy"
-									src="img/icons/recycle.png"
-									alt="Workflow Icon"
-								/>
-								<h3>Hardware recycling / donations</h3>
-							</button>
-                            <div class="service-text">
-                                <div class="background-glass"></div>
-                                <p class="glass-text">
-                                    When updating your clinic to the latest and greatest, we offer
-                                    an option to give your old hardware a second life by
-                                    refurbishing and donating to a non-profit animal care group in
-                                    your community. If we cannot find a good home for your donations
-                                    then we work with proper green reclamators to ensure that no
-                                    computer ends up in a landfill and polluting our planet.
-                                </p>
-                                <button class="service-text-button glass-text" type="button" onclick="hideText(this.parentElement)">
-                                    Less
-                                  </button>
-                            </div>
-						</li>
-					</ul>
-                    <button class="services-button glass-text" onclick="showMore(this)">
-                        See More
-                    </button>
-                </section>
-            </section>
-            <section class="main-section background-dark">
-                <header class="section-header">
-               
-					<h2 class="section-title ">This is how we do it</h2>
-                    <p class="how-subtitle ">
-                        <span class="">Man·aged Serv·ices</span> /ˈmænəʤd ˈsɜrvəsəz/ (n): the
-                        outsourcing of vital IT services that require constant maintenance and
-                        updating.
-                    </p>
-				</header>
-
-				<div class="how-text flex">
-               
-					<p class="">
-						Just like you administer preventative wellness care to your
-						patients—avoiding and catching small problems before they become big
-						ones—we do this for every facet of your computer systems with ‘round
-						the clock, 365 day monitoring and maintenance.
-					</p>
-
-					<p class="">
-						We don’t stop there. We work closely with industry leaders in the
-						field of veterinary technology, keeping on the cutting edge and
-						connecting you with the best solutions out there.
-					</p>
-				</div>
-            </section>
-            <section class="main-section">
-                <header class="section-header background-glass">
-
-                    <h2 class="section-title glass-text">This is who we help</h2>
-                    <span class="section-subtitle glass-text">We help clinics at all stages of life</span>
-					<p class="glass-text">
-						Whether you’re just starting-up or a mature hospital, PawTech has
-						the solutions to help you start growing, or grow even bigger.
-					</p>
-                </header>
-                <div>
-					<ul class="who-grid background-glass">
-						<li class="who-col">
-							<img loading="lazy" src="img/icons/business.svg" alt="Icon" />
-							<h3>General Practices</h3>
-							<p>
-								As general practitioners you have enough to worry about with
-								keeping your practice well versed in almost all facets of
-								veterinary medicine. As such, you need a team of professionals
-								who are experienced with everything in your practice, from
-								analyzers, to digital imaging solutions, to endoscopic
-								processors, and all of the many integration solutions that you
-								use every day to keep you and your patients thriving.
-							</p>
-						</li>
-						<li class="who-col">
-							<img loading="lazy" src="img/icons/job.svg" alt="Icon" />
-							<h3>Corporate Practice / Management Groups</h3>
-							<p>
-								We leverage group purchasing power for every aspect of our
-								business, so of course we look for the same type of benefits in
-								our support structure. Reach out to us to see if we can provide
-								your group with special rates. Management groups, we encourage
-								you to reach out and see how we can keep all of your practices
-								safe and secure.
-							</p>
-						</li>
-
-						<li class="who-col">
-							<img loading="lazy" src="img/icons/mobile.svg" alt="Icon" />
-							<h3>Mobile Practices</h3>
-							<p>
-								When you’re on the move, things can get a little unpredictable,
-								but at least your data is one thing you won’t have to worry
-								about. We can ensure that wherever you are your practice’s data
-								is safe and secure in the cloud. Not only that, if a device is
-								ever lost or stolen, we can track it as well as ensure that all
-								data is locked down, away from prying eyes.
-							</p>
-						</li>
-						<li class="who-col">
-							<img loading="lazy" src="img/icons/conference.svg" alt="Icon" />
-							<h3>Practice Groups / Multi-Location Hospitals</h3>
-							<p>
-								Whether you have 2 locations or 10, our comprehensive
-								integration solutions can allow every member of your staff to
-								communicate and share information effortlessly, with full access
-								to your patients’ entire history, no matter where you see them.
-							</p>
-						</li>
-						<li class="who-col">
-							<img loading="lazy" src="img/icons/rocket.svg" alt="Icon" />
-							<h3>Start-Up Clinics</h3>
-							<p>
-								Whether you’ve just opened your doors, or you plan to open them
-								later in the year, we can get you running smoothly from day one.
-							</p>
-						</li>
-					</ul>
-				</div>
-            </section>
-            <section class="main-section background-dark">
-                <header class="partners-header section-header">
-                    <h2 class="partners-h2 section-title flex">
-                        Some of our trusted <span>veterinary partners</span>
-                    </h2>
-                </header>
-                <div class="partners-list">
-                    <div class="partners-col">
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/gravity-payments_veterinary-logo.png"
-                                alt="gravity"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/next-line.jpg"
-                                alt="Next in Line"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/anipanion-logo-web.png"
-                                alt="anipanion"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/second-nature-logo-web.png"
-                                alt="Second Nature"
-                            />
-                        </div>
-                    </div>
-                    <div class="partners-col">
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/SignalPet.png"
-                                alt="SignalPET"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/Talkatoo-Logo-web.png"
-                                alt="talkatoo"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/Vetology-Logo-1.jpg"
-                                alt="Vetology"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                loading="lazy"
-                                src="img/partner-logos/WeaveLogoDarkGray.jpg"
-                                alt="weave"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>  
-            <section class="main-section "></section>
-        </section>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
