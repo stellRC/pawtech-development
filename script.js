@@ -153,10 +153,13 @@ document.addEventListener("scroll", () => {
 
 function showText(e)
 {
+	
 	if (!e.classList.contains('show'))
 	{
+
 		e.classList.add('show');
 	} else {
+
 		e.classList.remove('show');
 	}
 
@@ -169,9 +172,11 @@ function hideText(e)
 
 function showMore(e) {
 	let servicesMore = document.getElementById('servicesMore');
+	
 	if (e.innerHTML == 'See More')
 	{
 		e.innerHTML = 'See Less';
+		
 		servicesMore.classList.add('show');
 	} else {
 		e.innerHTML = 'See More';
