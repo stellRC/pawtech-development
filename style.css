@@ -155,7 +155,7 @@ nav li {
   box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 15px;
+  border-radius: 2px;
 
   letter-spacing: 0.04em;
   line-height: var(--line-sm);
@@ -187,7 +187,8 @@ nav li {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 90%;
+
+  left: 0;
   height: 0.1em;
   background-color: var(--clr-neutral-900);
   opacity: 0.5;
@@ -212,19 +213,6 @@ nav li {
   transform: rotate(90deg);
   transform: scale(1.1);
 }
-
-.sticky-header .link-background::after {
-  width: 100%;
-  left: 0;
-}
-
-/* .icon-animation {
-  opacity: 0;
-} */
-
-/* .logo-link:hover {
-  background-color: red;
-} */
 
 nav a {
   display: flex;
@@ -671,6 +659,10 @@ hr {
   gap: 2rem;
 }
 
+.hide-horse {
+  display: none;
+}
+
 /* #endregion */
 /* #endregion */
 
@@ -727,8 +719,8 @@ footer {
     width: 25vw;
   }
 
-  .sticky-header .link-background {
-    border-radius: 2px;
+  .link-background::after {
+    width: 100%;
   }
 }
 /* 640px */
@@ -736,10 +728,6 @@ footer {
   .logo-nav_wrapper nav {
     margin-top: -3rem;
   }
-
-  /* .desktop-description hr {
-    padding-left: 2rem;
-  } */
 
   hr {
     width: 50vw;
@@ -778,7 +766,7 @@ footer {
   .logo-nav_wrapper .logo-container {
     display: block;
     width: 60vw;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .logo-nav_wrapper {
@@ -825,7 +813,7 @@ footer {
 
   .desktop-subtitle {
     position: absolute;
-    bottom: 30vh;
+    bottom: 40vh;
     left: 5vw;
     font-size: var(--fs-600);
     font-weight: bolder;
@@ -833,13 +821,14 @@ footer {
 
   .desktop-description {
     position: absolute;
-    right: 5vw;
+    right: 3vw;
     top: 25vh;
 
     display: flex;
     gap: 0.5rem;
+    outline: 1px solid red;
 
-    font-size: var(--fs-500);
+    font-size: var(--fs-450);
     /* font-weight: bolder; */
   }
   .pup {
@@ -892,6 +881,14 @@ footer {
   }
   nav li {
     width: fit-content;
+  }
+
+  .desktop-subtitle {
+    bottom: 30vh;
+  }
+
+  .typewrite {
+    font-size: var(--fs-500);
   }
 }
 
