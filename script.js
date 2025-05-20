@@ -129,13 +129,17 @@ document.addEventListener("scroll", () => {
 function showText(e) {
   if (!e.classList.contains("show-flex")) {
     e.classList.add("show-flex");
+    e.previousElementSibling.classList.add("link-background");
+    e.previousElementSibling.classList.add("clicked");
   } else {
-    e.classList.remove("show-flex");
+    hideText(e);
   }
 }
 
 function hideText(e) {
   e.classList.remove("show-flex");
+  e.previousElementSibling.classList.remove("link-background");
+  e.previousElementSibling.classList.remove("clicked");
 }
 
 function showMore(e) {
