@@ -375,7 +375,7 @@ hr {
 
 .background-image {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
+    url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -649,7 +649,7 @@ hr {
   padding: 0;
 }
 .contact-image {
-  background-image: url("/img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
+  background-image: url("img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
   filter: grayscale(0.5);
 }
 
