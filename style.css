@@ -433,6 +433,14 @@ hr {
   display: none;
 }
 
+.sticky-mobile-logo {
+  transform: scale(0.5);
+}
+
+.sticky-dsk-logo {
+  display: none;
+}
+
 /* #endregion */
 
 /* #region ABOUT */
@@ -639,7 +647,13 @@ hr {
 
 .partners-col img {
   padding: 1vh;
-  filter: grayscale(0.5);
+  filter: grayscale(0.6);
+  border-radius: 15px;
+}
+
+.partners-col div {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* #endregion */
@@ -683,8 +697,10 @@ footer {
 
 .footer-flex {
   display: flex;
-  align-items: flex-end;
+
   justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 2rem;
 }
 .footer-nav {
   display: flex;
@@ -693,6 +709,7 @@ footer {
 
   gap: 1rem;
 }
+
 /* #endregion */
 
 /* #region JS */
@@ -751,6 +768,14 @@ footer {
     margin-top: -3rem;
   }
 
+  .sticky-dsk-logo {
+    display: block;
+  }
+
+  .sticky-mobile-logo {
+    display: none;
+  }
+
   hr {
     width: 50vw;
   }
@@ -770,6 +795,13 @@ footer {
   }
   .footer-flex {
     justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0;
+  }
+
+  .copyright-break {
+    display: none;
   }
 }
 
@@ -878,6 +910,7 @@ footer {
   .sticky-header .logo-container {
     width: 13vw;
   }
+
   .partners-col img {
     width: 20vw;
   }
