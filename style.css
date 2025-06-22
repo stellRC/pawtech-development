@@ -47,6 +47,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 *,
@@ -127,16 +128,14 @@ a:focus {
   width: 100%;
   opacity: 0.2;
 }
-nav {
-  margin-bottom: 5vh;
-}
 
 nav ul {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  min-height: 20vh;
+
+  align-items: center;
   gap: 5vh;
+  height: 100%;
 }
 
 nav li {
@@ -351,7 +350,7 @@ hgroup {
   z-index: 500;
 }
 
-.subtitle {
+.caption {
   text-align: center;
 }
 
@@ -769,6 +768,37 @@ footer {
 }
 /* 640px */
 @media only screen and (min-width: 40em) {
+  .hero-top {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    gap: 1rem;
+    grid-template-areas:
+      "logo nav"
+      "logo type"
+      "caption .";
+  }
+
+  .logo-nav_wrapper {
+    grid-area: logo;
+  }
+
+  .primary-nav {
+    grid-area: nav;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+  }
+
+  .caption {
+    grid-area: caption;
+  }
+
+  .subtitle-description {
+    grid-area: type;
+  }
+
   .logo-nav_wrapper nav {
     margin-top: -3rem;
   }
@@ -827,27 +857,18 @@ footer {
   .logo-nav_wrapper .logo-container {
     display: block;
     width: 65vw;
-    margin-top: 3rem;
   }
 
-  .logo-nav_wrapper {
-    display: flex;
-
-    padding-inline: 1rem;
-    flex-direction: column-reverse;
-  }
   .logo-nav_wrapper nav {
     margin-top: 0;
   }
 
   .logo-nav_wrapper nav ul {
-    position: absolute;
-    right: 3vw;
     margin-left: 0;
 
-    z-index: 10;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .logo-nav_wrapper nav li {
@@ -889,29 +910,6 @@ footer {
     font-size: var(--step-3);
   }
 
-  .desktop-description,
-  .desktop-subtitle {
-    display: block;
-  }
-
-  .desktop-subtitle {
-    position: absolute;
-    bottom: 40vh;
-    left: 5vw;
-
-    font-weight: bolder;
-  }
-
-  .desktop-description {
-    position: absolute;
-    right: 3vw;
-    top: 25vh;
-
-    display: flex;
-    gap: 0.5rem;
-
-    /* font-size: var(--fs-450); */
-  }
   .bird,
   .lizard,
   .mouse,
@@ -971,10 +969,6 @@ footer {
     width: fit-content;
   }
 
-  .desktop-subtitle {
-    bottom: 35vh;
-  }
-
   .typewrite {
     font-size: var(--step-2);
   }
@@ -983,11 +977,7 @@ footer {
 /* 1602px */
 @media only screen and (min-width: 100em) {
   .logo-nav_wrapper .logo-container {
-    width: 55vw;
-  }
-
-  .desktop-subtitle {
-    bottom: 25vh;
+    width: 40vw;
   }
 }
 
