@@ -400,7 +400,7 @@
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -409,44 +409,50 @@
                   />
                   <h3>24/7/365 system monitoring & human helpdesk</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-
-                  <p class="glass-text">
-                    At all times we keep an eye on your tech. From server
-                    shutdowns to hard-drive headaches, from system upgrades to
-                    firmware updates, we monitor your issues and needs in order
-                    to catch as many of them as possible before you even notice.
-                    Consider it preventative care for your computers.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    When problems inevitably do arise, you can reach out to our
-                    full-service helpdesk (included with every management plan).
-                    We quickly troubleshoot your clinic’s day-to-day issues, and
-                    get you back on track ASAP.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Gone are the days where you had to schedule a convenient
-                    time for both you and a technician to meet. We’re talking
-                    full remote support to all our clients—at no additional
-                    charge.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>24/7/365 system monitoring & human helpdesk</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      At all times we keep an eye on your tech. From server
+                      shutdowns to hard-drive headaches, from system upgrades to
+                      firmware updates, we monitor your issues and needs in
+                      order to catch as many of them as possible before you even
+                      notice. Consider it preventative care for your computers.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      When problems inevitably do arise, you can reach out to
+                      our full-service helpdesk (included with every management
+                      plan). We quickly troubleshoot your clinic’s day-to-day
+                      issues, and get you back on track ASAP.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Gone are the days where you had to schedule a convenient
+                      time for both you and a technician to meet. We’re talking
+                      full remote support to all our clients—at no additional
+                      charge.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -455,43 +461,50 @@
                   />
                   <h3>Cybersecurity</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Running a business in the 21st century means relying on
-                    tech, and relying on tech means engaging in robust security
-                    measures. Yet, security best practices are always changing
-                    and require constant updating. Furthermore, some
-                    veterinary-specific programs have special requirements when
-                    it comes to security products. To maximize digital safety,
-                    domain-specific knowledge is required.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    But you’re in luck—because you don’t have to worry about it!
-                    PawTech has decades of combined experience managing and
-                    securing vet-specific technology. Our multi-modal approach
-                    helps keep you protected from the worst.
-                  </p>
-                  <p class="glass-text">
-                    Let PawTech maintain a watchful eye over your important
-                    networks and data to ensure that you, and your clients,
-                    always have peace of mind.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Cybersecurity</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Running a business in the 21st century means relying on
+                      tech, and relying on tech means engaging in robust
+                      security measures. Yet, security best practices are always
+                      changing and require constant updating. Furthermore, some
+                      veterinary-specific programs have special requirements
+                      when it comes to security products. To maximize digital
+                      safety, domain-specific knowledge is required.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      But you’re in luck—because you don’t have to worry about
+                      it! PawTech has decades of combined experience managing
+                      and securing vet-specific technology. Our multi-modal
+                      approach helps keep you protected from the worst.
+                    </p>
+                    <p class="glass-text">
+                      Let PawTech maintain a watchful eye over your important
+                      networks and data to ensure that you, and your clients,
+                      always have peace of mind.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -500,39 +513,46 @@
                   />
                   <h3>Software and security training</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    We don’t leave you hanging! We provide on-going training for
-                    any and all systems we provide, instituting workflow
-                    optimizations across all devices and programs in your
-                    practice. From new software to old, we help your team get
-                    the most out of their tools.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    When it comes to cybersecurity, like anything in medicine,
-                    it’s a team effort. Where the bits-n-bytes stop, your staff
-                    begins. Making sure everyone is up to date on cybersecurity
-                    best-practices is a priority of ours. We pride ourselves on
-                    making sure you have simple, easy-to-follow instructions on
-                    how you and your team can be the first line of defense
-                    against cyber-threats.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Software and security training</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      We don’t leave you hanging! We provide on-going training
+                      for any and all systems we provide, instituting workflow
+                      optimizations across all devices and programs in your
+                      practice. From new software to old, we help your team get
+                      the most out of their tools.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      When it comes to cybersecurity, like anything in medicine,
+                      it’s a team effort. Where the bits-n-bytes stop, your
+                      staff begins. Making sure everyone is up to date on
+                      cybersecurity best-practices is a priority of ours. We
+                      pride ourselves on making sure you have simple,
+                      easy-to-follow instructions on how you and your team can
+                      be the first line of defense against cyber-threats.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -541,51 +561,58 @@
                   />
                   <h3>Business continuity planning</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    What would you do if the power went out for your practice?
-                    Or if your building was struck by lightning—and all of your
-                    equipment was no longer functional?
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    How long can your practice survive without your medical
-                    records? A day? A week?
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    What if you could take advantage of options that would get
-                    you up and running in well under an hour?
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    No machine is perfect, and when your worst fears come to
-                    pass—when your server simply will not turn on after a storm;
-                    when the broadband service is down for the whole block—our
-                    business continuity plans ensure that the interruption to
-                    your day is minimal.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    With our on-site disaster recovery options, we can have your
-                    system up and running again in a matter of just a few
-                    minutes.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Business continuity planning</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      What would you do if the power went out for your practice?
+                      Or if your building was struck by lightning—and all of
+                      your equipment was no longer functional?
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      How long can your practice survive without your medical
+                      records? A day? A week?
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      What if you could take advantage of options that would get
+                      you up and running in well under an hour?
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      No machine is perfect, and when your worst fears come to
+                      pass—when your server simply will not turn on after a
+                      storm; when the broadband service is down for the whole
+                      block—our business continuity plans ensure that the
+                      interruption to your day is minimal.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      With our on-site disaster recovery options, we can have
+                      your system up and running again in a matter of just a few
+                      minutes.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -594,29 +621,36 @@
                   />
                   <h3>Seamless inter-clinic communication & data-sharing</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Whether you have one location or ten, regardless of if
-                    you’re always in the clinic or always on the road, our
-                    comprehensive integration solutions allow you and your staff
-                    to to share information, access records, and communicate
-                    effortlessly.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Seamless inter-clinic communication & data-sharing</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Whether you have one location or ten, regardless of if
+                      you’re always in the clinic or always on the road, our
+                      comprehensive integration solutions allow you and your
+                      staff to to share information, access records, and
+                      communicate effortlessly.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -625,46 +659,53 @@
                   />
                   <h3>Cloud hosting (server, email, & data protection)</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    We can connect you to the cloud, customizing to your needs.
-                    Want to take advantage of public servers? We know the best
-                    options. Prefer to have a private server? We can get you set
-                    up.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    It’s not just about your data floating out there–we have a
-                    suite of robust, cloud-based solutions waiting for you.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Save time, money, and headaches with professional,
-                    customizable, and secure email addresses for you and your
-                    staff.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Make sure you never face that ultimate business nightmare:
-                    data loss. With our server-based systems your data is always
-                    protected, backed up, and secure, ensuring you have what you
-                    need, when you need it, always.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Cloud hosting (server, email, & data protection)</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      We can connect you to the cloud, customizing to your
+                      needs. Want to take advantage of public servers? We know
+                      the best options. Prefer to have a private server? We can
+                      get you set up.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      It’s not just about your data floating out there–we have a
+                      suite of robust, cloud-based solutions waiting for you.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Save time, money, and headaches with professional,
+                      customizable, and secure email addresses for you and your
+                      staff.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Make sure you never face that ultimate business nightmare:
+                      data loss. With our server-based systems your data is
+                      always protected, backed up, and secure, ensuring you have
+                      what you need, when you need it, always.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -673,36 +714,43 @@
                   />
                   <h3>Payment systems & compliance</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    No matter how you prefer to handle your business, we help
-                    you keep your payments streamlined. Cash, credit, checks, or
-                    apps—we’ve got you covered.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Not only that, we keep it simple and stress-free for you.
-                    Let our team handle PCI-DSS and other acronymic compliance
-                    tasks for you. Questionnaires can sometimes contain hundreds
-                    of arcane, time-consuming queries. Our staff is highly
-                    experienced in making sure you pass the test, both on paper
-                    and in practice.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Payment systems & compliance</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      No matter how you prefer to handle your business, we help
+                      you keep your payments streamlined. Cash, credit, checks,
+                      or apps—we’ve got you covered.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Not only that, we keep it simple and stress-free for you.
+                      Let our team handle PCI-DSS and other acronymic compliance
+                      tasks for you. Questionnaires can sometimes contain
+                      hundreds of arcane, time-consuming queries. Our staff is
+                      highly experienced in making sure you pass the test, both
+                      on paper and in practice.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -711,100 +759,39 @@
                   />
                   <h3>vCIO (Virtual Chief Information Officer) Services</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Let us be your strategic partner. One who not only knows the
-                    industry, but understands you, your needs, and the needs of
-                    your practice. We can help you achieve the veterinary
-                    practice of your dreams.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    This brings together all of our managed services, security,
-                    and regular consultations to explore new avenues of growth
-                    and efficiency for your business.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Our simple pricing is per veterinarian on staff
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
-              </li>
-              <li>
-                <div class="background-glass"></div>
-                <button
-                  class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
-                >
-                  <img
-                    loading="lazy"
-                    src="img/icons/voip.svg"
-                    alt="Communication Icon"
-                  />
-                  <h3>Phone & fax systems</h3>
-                </button>
-                <div class="service-text">
-                  <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Gone are the days of hiring someone to come run phone wiring
-                    all throughout your facility, leaving you with a line and
-                    not much else. Today, we use state-of-the-art VoIP phone
-                    technology. VoIP stands for “Voice over IP” and it’s
-                    basically phone-via-internet. It’s easier to install,
-                    configure, maintain, and–best of all–it’s more affordable
-                    (up to 50% more affordable!). you not only save on the costs
-                    of installation, calls themselves are significantly less
-                    expensive.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    With VoIP you can effortlessly customize your telephone
-                    system. Voicemail, messages, hold music–it’s all at your
-                    fingertips. You can even seamlessly transfer calls between
-                    practice locations, whether they’re next door, or in the
-                    next county.
-                  </p>
-                  <br />
-
-                  <p class="glass-text">
-                    We set you up with a full suite of phone features. All the
-                    traditional stuff you’re used to, plus call hold, call
-                    transfer, call hunt conference calling, find/follow me, and
-                    auto-attendant phone menus. We can even have your recordings
-                    voiced by professional voice actors.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Virtual faxing (also called IP faxing) is another feature of
-                    VoIP phone systems. Even in the age of email and instant
-                    communication, there are some instances when faxes are
-                    necessary. Without the need for paper or toner, you can send
-                    and receive faxes using the email account you already have
-                    with a hosted VoIP system.
-                  </p>
-                  <br />
-
-                  <p class="glass-text">
-                    Switching to VoIP means having your cake and eating it
-                    too–everything you like about traditional phones, plus all
-                    the benefits of modern features.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>vCIO (Virtual Chief Information Officer) Services</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Let us be your strategic partner. One who not only knows
+                      the industry, but understands you, your needs, and the
+                      needs of your practice. We can help you achieve the
+                      veterinary practice of your dreams.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      This brings together all of our managed services,
+                      security, and regular consultations to explore new avenues
+                      of growth and efficiency for your business.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Our simple pricing is per veterinarian on staff
+                    </p>
+                  </div>
+                </dialog>
               </li>
             </ul>
             <ul
@@ -815,7 +802,82 @@
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/icons/voip.svg"
+                    alt="Communication Icon"
+                  />
+                  <h3>Phone & fax systems</h3>
+                </button>
+                <dialog class="service-text">
+                  <div class="background-glass"></div>
+                  <header class="service-header-expanded">
+                    <h3>Phone & fax systems</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Gone are the days of hiring someone to come run phone
+                      wiring all throughout your facility, leaving you with a
+                      line and not much else. Today, we use state-of-the-art
+                      VoIP phone technology. VoIP stands for “Voice over IP” and
+                      it’s basically phone-via-internet. It’s easier to install,
+                      configure, maintain, and–best of all–it’s more affordable
+                      (up to 50% more affordable!). you not only save on the
+                      costs of installation, calls themselves are significantly
+                      less expensive.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      With VoIP you can effortlessly customize your telephone
+                      system. Voicemail, messages, hold music–it’s all at your
+                      fingertips. You can even seamlessly transfer calls between
+                      practice locations, whether they’re next door, or in the
+                      next county.
+                    </p>
+                    <br />
+
+                    <p class="glass-text">
+                      We set you up with a full suite of phone features. All the
+                      traditional stuff you’re used to, plus call hold, call
+                      transfer, call hunt conference calling, find/follow me,
+                      and auto-attendant phone menus. We can even have your
+                      recordings voiced by professional voice actors.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Virtual faxing (also called IP faxing) is another feature
+                      of VoIP phone systems. Even in the age of email and
+                      instant communication, there are some instances when faxes
+                      are necessary. Without the need for paper or toner, you
+                      can send and receive faxes using the email account you
+                      already have with a hosted VoIP system.
+                    </p>
+                    <br />
+
+                    <p class="glass-text">
+                      Switching to VoIP means having your cake and eating it
+                      too–everything you like about traditional phones, plus all
+                      the benefits of modern features.
+                    </p>
+                  </div>
+                </dialog>
+              </li>
+              <li>
+                <div class="background-glass"></div>
+                <button
+                  class="service-link glass-text"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -824,37 +886,44 @@
                   />
                   <h3>Workflow Assessments</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Imagine a task you do every day, 25 times a day, 5 minutes
-                    every time.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Imagine if you only had to do it once. Or if it only took
-                    ten seconds each time. How much more productive would you
-                    and your staff be?
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Let us examine your workflow and suggest the best way to
-                    update it.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Workflow Assessments</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Imagine a task you do every day, 25 times a day, 5 minutes
+                      every time.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Imagine if you only had to do it once. Or if it only took
+                      ten seconds each time. How much more productive would you
+                      and your staff be?
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Let us examine your workflow and suggest the best way to
+                      update it.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -863,34 +932,42 @@
                   />
                   <h3>Clinic Design Consultation</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Building a new clinic? Adding on an extension? Doing a
-                    renovation? Let us help you make sure that your wonderful
-                    new practice’s technological infrastructure is set up to
-                    meet your needs now and in the future.
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Speak with one of our engineers who can create a customized
-                    structured cabling plan to meet and exceed your needs not
-                    just for today or tomorrow, but for many years to come.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Clinic Design Consultation</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Building a new clinic? Adding on an extension? Doing a
+                      renovation? Let us help you make sure that your wonderful
+                      new practice’s technological infrastructure is set up to
+                      meet your needs now and in the future.
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Speak with one of our engineers who can create a
+                      customized structured cabling plan to meet and exceed your
+                      needs not just for today or tomorrow, but for many years
+                      to come.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -899,40 +976,47 @@
                   />
                   <h3>Vendor Interface & Service Brokering</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    Instead of dragging your technician away from
-                    income-generating activities to have them sit on the phone
-                    with a vendor support line for hours, simply open a ticket
-                    with your assigned system administrator and let us take care
-                    of the issue while you take care of your patients!
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    Are you getting a good deal on your business class internet?
-                    Phone plan? Waiting room TV?
-                  </p>
-                  <br />
-                  <p class="glass-text">
-                    We work with hundreds of providers, and are experienced in
-                    helping you find not only the best quality of service
-                    available, but the best deal for you.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Vendor Interface & Service Brokering</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      Instead of dragging your technician away from
+                      income-generating activities to have them sit on the phone
+                      with a vendor support line for hours, simply open a ticket
+                      with your assigned system administrator and let us take
+                      care of the issue while you take care of your patients!
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      Are you getting a good deal on your business class
+                      internet? Phone plan? Waiting room TV?
+                    </p>
+                    <br />
+                    <p class="glass-text">
+                      We work with hundreds of providers, and are experienced in
+                      helping you find not only the best quality of service
+                      available, but the best deal for you.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -941,31 +1025,38 @@
                   />
                   <h3>Service Contracts & Upgrades</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    We offer hardware service contracts to either supplement or
-                    replace a manufacturer's warranty. For example, just because
-                    you cannot get an extended warranty for your digital x-ray
-                    capture station, does not mean that you must go out and
-                    spend tens of thousands of dollars to get an entirely new
-                    setup to maintain peace of mind. We aim to find a solution
-                    before such drastic measures are required.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Service Contracts & Upgrades</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      We offer hardware service contracts to either supplement
+                      or replace a manufacturer's warranty. For example, just
+                      because you cannot get an extended warranty for your
+                      digital x-ray capture station, does not mean that you must
+                      go out and spend tens of thousands of dollars to get an
+                      entirely new setup to maintain peace of mind. We aim to
+                      find a solution before such drastic measures are required.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -974,29 +1065,36 @@
                   />
                   <h3>IT equipment procurement</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    If you thought we only dealt with cyberspace, think again!
-                    We have a passion for good hardware and helping you find the
-                    best physical solutions to your electronic needs. Laptops,
-                    desktops, routers, cameras, cables, etc. Whatever you need,
-                    we’ll help you find it.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>IT equipment procurement</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      If you thought we only dealt with cyberspace, think again!
+                      We have a passion for good hardware and helping you find
+                      the best physical solutions to your electronic needs.
+                      Laptops, desktops, routers, cameras, cables, etc. Whatever
+                      you need, we’ll help you find it.
+                    </p>
+                  </div>
+                </dialog>
               </li>
               <li>
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
-                  onclick="showText(this.nextElementSibling)"
+                  onclick="modal(this.nextElementSibling)"
                 >
                   <img
                     loading="lazy"
@@ -1005,25 +1103,32 @@
                   />
                   <h3>Hardware recycling / donations</h3>
                 </button>
-                <div class="service-text">
+                <dialog class="service-text">
                   <div class="background-glass"></div>
-                  <p class="glass-text">
-                    When updating your clinic to the latest and greatest, we
-                    offer an option to give your old hardware a second life by
-                    refurbishing and donating to a non-profit animal care group
-                    in your community. If we cannot find a good home for your
-                    donations then we work with proper green reclamators to
-                    ensure that no computer ends up in a landfill and polluting
-                    our planet.
-                  </p>
-                  <button
-                    class="service-text-button glass-text"
-                    type="button"
-                    onclick="hideText(this.parentElement)"
-                  >
-                    Less
-                  </button>
-                </div>
+                  <header class="service-header-expanded">
+                    <h3>Hardware recycling / donations</h3>
+                    <button
+                      class="glass-text button-48"
+                      type="button"
+                      onclick="hideText(this.parentElement.parentElement)"
+                      aria-label="close"
+                    >
+                      <span class="sr-only">Close</span>
+                      <span class="close-button" aria-hidden="true"></span>
+                    </button>
+                  </header>
+                  <div class="service-expanded-text">
+                    <p class="glass-text">
+                      When updating your clinic to the latest and greatest, we
+                      offer an option to give your old hardware a second life by
+                      refurbishing and donating to a non-profit animal care
+                      group in your community. If we cannot find a good home for
+                      your donations then we work with proper green reclamators
+                      to ensure that no computer ends up in a landfill and
+                      polluting our planet.
+                    </p>
+                  </div>
+                </dialog>
               </li>
             </ul>
             <button class="services-button glass-text" onclick="showMore(this)">

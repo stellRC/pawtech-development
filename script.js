@@ -129,6 +129,7 @@ document.addEventListener("scroll", () => {
 function showText(e) {
   if (!e.classList.contains("show-flex")) {
     e.classList.add("show-flex");
+
     e.previousElementSibling.classList.add("link-background");
     e.previousElementSibling.classList.add("clicked");
   } else {
@@ -136,7 +137,21 @@ function showText(e) {
   }
 }
 
+function modal(e) {
+  if (!e.classList.contains("show-flex")) {
+    e.classList.add("show-flex");
+
+    e.previousElementSibling.classList.add("link-background");
+    e.previousElementSibling.classList.add("clicked");
+    // e.showModal();
+  } else {
+    hideText(e);
+  }
+}
+
 function hideText(e) {
+  console.log(e);
+  e.close();
   e.classList.remove("show-flex");
   e.previousElementSibling.classList.remove("link-background");
   e.previousElementSibling.classList.remove("clicked");
