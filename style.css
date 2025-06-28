@@ -909,7 +909,7 @@ footer {
 }
 
 .show {
-  display: block;
+  display: grid;
 }
 
 .show-flex {
@@ -1043,7 +1043,7 @@ footer {
     display: none;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  /* @media (prefers-reduced-motion: no-preference) {
     .icon-animation {
       --range-start: contain 0;
       --range-end: contain 100%;
@@ -1060,7 +1060,7 @@ footer {
         animation-range: contain 0 contain 100%;
       }
     }
-  }
+  } */
 
   @keyframes rotateAnimation {
     from {
