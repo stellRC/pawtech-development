@@ -1020,6 +1020,34 @@ footer {
   .copyright-break {
     display: none;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .icon-animation {
+      --range-start: contain 0;
+      --range-end: contain 100%;
+      opacity: 0;
+      animation: fade-in ease;
+      animation-timeline: view(block);
+      animation-range: var(--range-start) var(--range-end);
+    }
+    @supports (animation-timeline: scroll()) {
+      .icon-animation {
+        opacity: 0;
+        animation: fade-in ease;
+        animation-timeline: view(block);
+        animation-range: contain 0 contain 100%;
+      }
+    }
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 @media only screen and (min-width: 55em) {
@@ -1187,34 +1215,6 @@ footer {
 
   :modal {
     width: 40vw;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .icon-animation {
-    --range-start: contain 0;
-    --range-end: contain 100%;
-    opacity: 0;
-    animation: fade-in ease;
-    animation-timeline: view(block);
-    animation-range: var(--range-start) var(--range-end);
-  }
-  @supports (animation-timeline: scroll()) {
-    .icon-animation {
-      opacity: 0;
-      animation: fade-in ease;
-      animation-timeline: view(block);
-      animation-range: contain 0 contain 100%;
-    }
-  }
-}
-
-@keyframes rotateAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
