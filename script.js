@@ -22,7 +22,6 @@ const elPhone = document.getElementsByClassName("phone")[0];
 const elName = document.getElementsByClassName("name")[0];
 const elMessage = document.getElementsByClassName("message")[0];
 const elSubmit = document.getElementsByClassName("input-submit")[0];
-console.log(elSubmit);
 
 const formErrors = {
   email: false,
@@ -109,52 +108,57 @@ for (const link of links) {
   );
   if (link.classList.contains("contact-add")) {
     link.innerHTML =
-      `${atob(attrs.part1)}@` +
+      `${window.atob(attrs.part1)}@` +
       link.innerHTML +
-      `${atob(attrs.part2)}.${atob(attrs.part3)}`;
+      `${window.atob(attrs.part2)}.${window.atob(attrs.part3)}`;
   }
 }
 
-document.addEventListener("scroll", () => {
-  let stickyHeader = document.querySelector(".sticky-header");
-  for (const child of stickyHeader.children) {
-    if (window.scrollY > 600) {
-      child.classList.remove("hide");
-    } else {
-      child.classList.add("hide");
-    }
-  }
-});
+// document.addEventListener("scroll", () => {
+//   let stickyHeader = document.querySelector(".sticky-header");
+//   for (const child of stickyHeader.children) {
+//     if (window.scrollY > 600) {
+//       child.classList.remove("hide");
+//     } else {
+//       child.classList.add("hide");
+//     }
+//   }
+// });
 
 function showText(e) {
   if (!e.classList.contains("show-flex")) {
     e.classList.add("show-flex");
 
-    e.previousElementSibling.classList.add("link-background");
+    // e.previousElementSibling.classList.add("link-background");
     e.previousElementSibling.classList.add("clicked");
   } else {
     hideText(e);
   }
 }
 
+// Services Grid and Modal
+const servicesGrid = document.querySelector(".services");
+const bodyElement = document.querySelector("body");
+
 function modal(e) {
   if (!e.classList.contains("show-flex")) {
     e.classList.add("show-flex");
 
-    e.previousElementSibling.classList.add("link-background");
+    // e.previousElementSibling.classList.add("link-background");
     e.previousElementSibling.classList.add("clicked");
-    // e.showModal();
+    bodyElement.classList.add("modal-open");
+    e.showModal();
   } else {
     hideText(e);
   }
 }
 
 function hideText(e) {
-  console.log(e);
   e.close();
-  e.classList.remove("show-flex");
-  e.previousElementSibling.classList.remove("link-background");
+
+  bodyElement.classList.remove("modal-open");
   e.previousElementSibling.classList.remove("clicked");
+  e.classList.remove("show-flex");
 }
 
 function showMore(e) {

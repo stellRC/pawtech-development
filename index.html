@@ -53,7 +53,7 @@
   <body id="home">
     <header class="mobile-header">
       <img
-        loading="lazy"
+        loading=""
         class="header-background"
         src="img/elec/pexels-motherboard.jpg"
         alt="background image"
@@ -188,7 +188,8 @@
         <hr />
         <div class="subtitle-description">
           <a
-            href=""
+            tabindex="-1"
+            href="#"
             class="typewrite"
             data-period="500"
             data-type='["> We are the vet tech experts. \n  A full IT service provider. \n  Catering to","", " animal hospitals"," veterinary clinics"," mobile veterinary practices"," veterinary professionals.\n> That’s all we do. "]'
@@ -198,31 +199,16 @@
         </div>
       </section>
       <section class="animal-container">
+        <img loading="" class="mouse" src="img/animals/rat.webp" alt="mouse" />
         <img
-          loading="lazy"
-          class="mouse"
-          src="img/animals/rat.webp"
-          alt="mouse"
-        />
-        <img
-          loading="lazy"
+          loading=""
           class="lizard"
           src="img/animals/lizard.webp"
           alt="lizard"
         />
-        <img
-          loading="lazy"
-          class="bird"
-          src="img/animals/bird.webp"
-          alt="bird"
-        />
-        <img loading="lazy" class="cat" src="img/animals/cat.webp" alt="cat" />
-        <img
-          loading="lazy"
-          class="pup"
-          src="img/animals/dog.webp"
-          alt="puppy"
-        />
+        <img loading="" class="bird" src="img/animals/bird.webp" alt="bird" />
+        <img loading="" class="cat" src="img/animals/cat.webp" alt="cat" />
+        <img loading="" class="pup" src="img/animals/dog.webp" alt="puppy" />
       </section>
     </header>
     <main>
@@ -396,7 +382,7 @@
           </header>
           <section class="services">
             <ul class="services-grid background-glass">
-              <li>
+              <li class="">
                 <div class="background-glass"></div>
                 <button
                   class="service-link glass-text"
@@ -507,6 +493,7 @@
                   onclick="modal(this.nextElementSibling)"
                 >
                   <img
+                    class="icon-animation"
                     loading="lazy"
                     src="img/icons/class.svg"
                     alt="Devices Icon"
@@ -515,8 +502,18 @@
                 </button>
                 <dialog class="service-text">
                   <div class="background-glass"></div>
+
                   <header class="service-header-expanded">
-                    <h3>Software and security training</h3>
+                    <div class="service-icon">
+                      <!-- <img
+                        class="icon-expanded"
+                        loading="lazy"
+                        src="img/icons/class.svg"
+                        alt="Devices Icon"
+                      /> -->
+                      <h3>Software and security training</h3>
+                    </div>
+
                     <button
                       class="glass-text button-48"
                       type="button"
@@ -1405,7 +1402,7 @@
       <div>
         <ul class="footer-nav">
           <li><a href="#home" class="underline-link">Home</a></li>
-          <li><a href="#main" class="underline-link">Learn more</a></li>
+          <li><a href="#main" class="underline-link">About</a></li>
           <li><a href="#contact" class="underline-link">Contact</a></li>
         </ul>
       </div>
