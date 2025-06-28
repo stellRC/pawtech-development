@@ -897,6 +897,10 @@ footer {
 
 /* #region JS */
 .hide {
+  visibility: hidden;
+}
+
+.honey {
   display: none;
 }
 
