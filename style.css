@@ -930,26 +930,8 @@ footer {
 /* Mobile only */
 
 @media only screen and (max-width: 30em) {
-  /* .mobile-header {
-    position: relative;
-  }
-  .mobile-header::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/elec/pexels-motherboard.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-  } */
-
-  .header-background {
-    /* display: none; */
+  :modal {
+    height: 70vh;
   }
 }
 
