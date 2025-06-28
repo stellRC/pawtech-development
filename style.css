@@ -919,6 +919,21 @@ footer {
 
 /* #endregion */
 /* #region MEDIA */
+/* Mobile only */
+
+@media only screen and (max-width: 30em) {
+  /* .animal-container {
+    position: static;
+    margin-top: 5rem;
+  } */
+
+  .mobile-header:before {
+    background-image: url("img/elec/pexels-motherboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+}
 
 @media only screen and (min-width: 25em) {
   nav ul {
@@ -961,6 +976,7 @@ footer {
     transition: translate 0.5s ease-in-out;
   }
 }
+
 /* 640px */
 @media only screen and (min-width: 40em) {
   .primary-nav ul {
