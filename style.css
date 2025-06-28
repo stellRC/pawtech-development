@@ -64,10 +64,6 @@
 
 html,
 body {
-  /* height: 100vh; */
-  /* height: 100dvh; */
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
   background-color: black;
 }
 
@@ -161,6 +157,8 @@ a:focus {
 /* #region Header */
 .mobile-header {
   height: 100dvh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   background: var(--hero-mask);
   overflow: hidden;
 
