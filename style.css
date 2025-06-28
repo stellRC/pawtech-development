@@ -167,12 +167,12 @@ a:focus {
   overflow: hidden;
 }
 
-.header-background {
+/* .header-background {
   position: absolute;
   height: 100dvh;
   width: 100%;
   opacity: 0.2;
-}
+} */
 
 nav ul {
   display: flex;
