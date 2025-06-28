@@ -928,9 +928,11 @@ footer {
     background-position: center;
     opacity: 0.5;
   }
+}
 
+@media only screen and (max-width: 30em) and (min-height: 700px) {
   .hero-top {
-    gap: 4rem;
+    gap: 10dvh;
   }
 }
 
