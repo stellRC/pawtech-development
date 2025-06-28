@@ -472,12 +472,8 @@ hr {
 
 /* #region STICKY NAV */
 .sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  min-height: 0;
-  height: 15vh;
+  height: 0;
+  /* height: 15vh; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -489,6 +485,8 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: height 1s ease-in-out;
 }
 
 .sticky-header .logo-container {
@@ -898,6 +896,13 @@ footer {
 /* #region JS */
 .hide {
   visibility: hidden;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: fit-content;
 }
 
 .honey {

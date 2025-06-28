@@ -113,14 +113,16 @@ for (const link of links) {
       `${window.atob(attrs.part2)}.${window.atob(attrs.part3)}`;
   }
 }
-
+const stickyHeader = document.querySelector(".sticky-header");
 document.addEventListener("scroll", () => {
-  let stickyHeader = document.querySelector(".sticky-header");
   for (const child of stickyHeader.children) {
-    if (window.scrollY > 900) {
+    console.log(child);
+    if (window.scrollY > 600) {
+      stickyHeader.classList.add("fixed");
       child.classList.remove("hide");
     } else {
       child.classList.add("hide");
+      stickyHeader.classList.remove("fixed");
     }
   }
 });
