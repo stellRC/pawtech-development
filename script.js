@@ -165,13 +165,13 @@ function hideText(e) {
 function showMore(e) {
   let servicesMore = document.getElementById("servicesMore");
 
-  if (e.innerHTML == "See More") {
+  if (servicesMore.classList.contains("show")) {
+    e.innerHTML = "See More";
+    servicesMore.classList.remove("show");
+  } else {
     e.innerHTML = "See Less";
 
     servicesMore.classList.add("show");
-  } else {
-    e.innerHTML = "See More";
-    servicesMore.classList.remove("show");
   }
 }
 

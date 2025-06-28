@@ -931,7 +931,7 @@ footer {
 
 @media only screen and (max-width: 30em) {
   :modal {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
