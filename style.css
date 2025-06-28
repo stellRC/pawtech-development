@@ -63,13 +63,9 @@
 }
 
 html,
-.service-expanded-text {
-  /* scroll-padding-top: 4rem; */
-}
-html,
 body {
-  height: 100vh;
-  height: 100dvh;
+  /* height: 100vh; */
+  /* height: 100dvh; */
   background-color: black;
 }
 
@@ -509,10 +505,6 @@ hr {
   gap: 2rem;
 }
 
-.sticky-header .link-background {
-  /* border-radius: 50%; */
-}
-
 .sticky-header svg {
   width: 8rem;
 }
@@ -718,9 +710,6 @@ hr {
   width: 90vw;
   color: inherit;
   border: none;
-}
-
-.service-link .link-background {
 }
 
 .service-header-expanded h3 {
@@ -1223,12 +1212,6 @@ footer {
   }
   .typewrite {
     font-size: var(--step-1);
-  }
-
-  .grid-shrink {
-    /* width: 50vw;
-    margin: 0; */
-    /* transform: translate(-20%); */
   }
 
   :modal {
