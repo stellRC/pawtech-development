@@ -486,7 +486,7 @@ hr {
   background-size: cover;
 
   transition: height 1s ease-in-out;
-  display: none;
+  /* display: none; */
 }
 
 .sticky-header .logo-container {
