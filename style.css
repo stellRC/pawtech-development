@@ -169,8 +169,12 @@ a:focus {
 
 .header-background {
   position: absolute;
-  height: 100dvh;
-  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100dvh;
+  width: 100%; */
   opacity: 0.2;
 }
 
@@ -485,7 +489,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 
-  transition: height 1s ease-in-out;
+  transition: height 2s ease-in-out;
   /* display: none; */
 }
 
