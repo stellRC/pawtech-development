@@ -922,11 +922,6 @@ footer {
 /* Mobile only */
 
 @media only screen and (max-width: 30em) {
-  /* .animal-container {
-    position: static;
-    margin-top: 5rem;
-  } */
-
   .mobile-header:before {
     background-image: url("img/elec/pexels-motherboard.jpg");
     background-repeat: no-repeat;
