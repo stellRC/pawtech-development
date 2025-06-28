@@ -1033,8 +1033,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   }
   .footer-flex {
-    justify-content: space-evenly;
-    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
   }
