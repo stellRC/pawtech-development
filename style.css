@@ -162,13 +162,13 @@ a:focus {
 
 /* #region Header */
 .mobile-header {
-  /* min-height: 100dvh; */
+  min-height: 100dvh;
   background: var(--hero-mask);
   overflow: hidden;
 }
 
 .header-background {
-  position: absolute;
+  /* position: absolute; */
   height: 100dvh;
   width: 100%;
   opacity: 0.2;
