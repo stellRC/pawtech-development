@@ -474,9 +474,12 @@ hr {
 /* #endregion */
 /* #region MAIN */
 
-.background-image {
+.main-image {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
+}
+
+.background-image {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
