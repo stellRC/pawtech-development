@@ -114,16 +114,16 @@ for (const link of links) {
   }
 }
 
-// document.addEventListener("scroll", () => {
-//   let stickyHeader = document.querySelector(".sticky-header");
-//   for (const child of stickyHeader.children) {
-//     if (window.scrollY > 900) {
-//       child.classList.remove("hide");
-//     } else {
-//       child.classList.add("hide");
-//     }
-//   }
-// });
+document.addEventListener("scroll", () => {
+  let stickyHeader = document.querySelector(".sticky-header");
+  for (const child of stickyHeader.children) {
+    if (window.scrollY > 700) {
+      child.classList.remove("hide");
+    } else {
+      child.classList.add("hide");
+    }
+  }
+});
 
 function showText(e) {
   if (!e.classList.contains("show-flex")) {
