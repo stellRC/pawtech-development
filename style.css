@@ -491,10 +491,6 @@ hr {
   background-size: cover;
 }
 
-.sticky-header + .main-content {
-  padding-top: 1vh;
-}
-
 .sticky-header .logo-container {
   height: fit-content;
   margin: 0;
@@ -983,6 +979,10 @@ footer {
 
   .logo-nav_wrapper nav {
     margin-top: -3rem;
+  }
+
+  .sticky-header + .main-content {
+    padding-top: 1vh;
   }
 
   .sticky-dsk-logo {
