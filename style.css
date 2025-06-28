@@ -376,9 +376,6 @@ nav span {
 /* #endregion */
 
 .animal-container {
-  outline: 1px solid red;
-  /* height: 30vh; */
-  /* position: absolute; */
   overflow: hidden;
   bottom: 0;
   right: 0;
@@ -1127,6 +1124,10 @@ footer {
 
   .logo-nav_wrapper nav li {
     width: 20vw;
+  }
+
+  .animal-container {
+    position: absolute;
   }
 }
 /* 1030px */
