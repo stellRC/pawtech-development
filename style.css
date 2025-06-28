@@ -154,11 +154,18 @@ a:focus {
 
 /* #endregion */
 
+html,
+body {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 /* #region Header */
 .mobile-header {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 
-  height: calc(var(--vh, 1dh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   /* height: fit-content; */
   background: var(--hero-mask);
   overflow: hidden;
