@@ -477,7 +477,7 @@ hr {
 .background-image {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
