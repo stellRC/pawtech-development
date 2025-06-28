@@ -928,6 +928,10 @@ footer {
     background-position: center;
     opacity: 0.5;
   }
+
+  .hero-top {
+    gap: 4rem;
+  }
 }
 
 @media only screen and (min-width: 25em) {
