@@ -473,7 +473,7 @@ hr {
 /* #region STICKY NAV */
 .sticky-header {
   height: 0;
-  /* height: 15vh; */
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -487,6 +487,7 @@ hr {
   background-size: cover;
 
   transition: height 1s ease-in-out;
+  display: none;
 }
 
 .sticky-header .logo-container {
@@ -1130,6 +1131,10 @@ footer {
       "logo nav"
       "caption ."
       "type .";
+  }
+
+  .sticky-header {
+    display: flex;
   }
   .logo-nav_wrapper {
     width: 30vw;
