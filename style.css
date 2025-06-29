@@ -954,7 +954,7 @@ footer {
 
 @media only screen and (max-width: 30em) and (min-height: 750px) {
   .hero-top {
-    gap: 5vh;
+    gap: 10vh;
   }
 }
 
