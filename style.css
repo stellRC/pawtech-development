@@ -153,15 +153,15 @@ a:focus {
 }
 
 /* #endregion */
-
-body,
-.mobile-header {
+html,
+body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
 
 /* #region Header */
 .mobile-header {
+  height: 100vh;
   /* height: fit-content; */
   background: var(--hero-mask);
   overflow: hidden;
