@@ -45,6 +45,9 @@
   --sb-track-color: hwb(199 13% 75%);
   --sb-thumb-color: #bfbfbf;
   --sb-size: 10px;
+
+  interpolate-size: allow-keywords;
+  background-attachment: fixed;
 }
 
 /* #region Elements and Resets */
@@ -909,7 +912,7 @@ footer {
   /* position: sticky;
   top: 0; */
   z-index: 1000;
-  min-height: fit-content;
+  max-height: max-content;
 }
 
 .honey {
