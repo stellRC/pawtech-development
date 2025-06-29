@@ -157,8 +157,7 @@ a:focus {
 
 /* #endregion */
 
-body,
-.mobile-header {
+body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
@@ -166,6 +165,7 @@ body,
 /* #region Header */
 .mobile-header {
   /* height: fit-content; */
+  height: 100vh;
   background: var(--hero-mask);
   overflow: hidden;
 

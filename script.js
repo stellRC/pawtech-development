@@ -174,3 +174,6 @@ function showMore(e) {
     servicesMore.classList.add("show");
   }
 }
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
