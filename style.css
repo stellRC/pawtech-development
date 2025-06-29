@@ -388,6 +388,7 @@ nav span {
   overflow: hidden;
   bottom: 0;
   right: 0;
+  height: fit-content;
 
   display: flex;
   align-items: flex-end;
