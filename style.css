@@ -480,7 +480,8 @@ hr {
 }
 
 .background-image,
-.background-image-mobile {
+.background-image-mobile,
+.background-image-desktop {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
