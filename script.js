@@ -116,12 +116,12 @@ for (const link of links) {
 const stickyHeader = document.querySelector(".sticky-header");
 document.addEventListener("scroll", () => {
   for (const child of stickyHeader.children) {
-    if (window.scrollY > 700) {
-      child.classList.add("hide");
+    if (window.scrollY > 750) {
+      child.classList.add("opacity-change");
       stickyHeader.classList.add("fixed");
     } else {
       stickyHeader.classList.remove("fixed");
-      child.classList.remove("hide");
+      child.classList.remove("opacity-change");
     }
   }
 });
