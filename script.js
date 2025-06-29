@@ -178,6 +178,7 @@ document.addEventListener("scroll", function () {
   const stickyHeader = document.querySelector(".sticky-header");
   const background = document.querySelector(".ios-background");
   const content = document.querySelector(".main-content");
+
   const scrollPosition = window.scrollY;
   const contentTop = content.offsetTop;
 
