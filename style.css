@@ -64,7 +64,6 @@
 
 html,
 body {
-  background-attachment: fixed;
   background-color: black;
 }
 
@@ -477,10 +476,30 @@ hr {
 }
 
 .background-image {
+  /* position: relative; */
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.background-image::before {
+  /* background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* content: "";
+  position: fixed;
+  z-index: -1;
+  display: block;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; */
 }
 
 /* #region STICKY NAV */
@@ -1011,9 +1030,9 @@ footer {
     margin-top: -3rem;
   }
 
-  .sticky-header + .main-content {
+  /* .sticky-header + .main-content {
     padding-top: 1vh;
-  }
+  } */
 
   .sticky-dsk-logo {
     display: block;
