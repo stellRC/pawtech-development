@@ -64,10 +64,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html,
-body {
+html {
   background-color: black;
+}
+
+body {
   background: transparent;
 }
 
