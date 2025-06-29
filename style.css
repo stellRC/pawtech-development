@@ -162,7 +162,7 @@ a:focus {
 .mobile-header,
 .header-background {
   height: 95vh;
-  height: calc(var(--vh, 1vh) * 95);
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* #region Header */
