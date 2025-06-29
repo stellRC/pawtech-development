@@ -113,18 +113,6 @@ for (const link of links) {
       `${window.atob(attrs.part2)}.${window.atob(attrs.part3)}`;
   }
 }
-const stickyHeader = document.querySelector(".sticky-header");
-document.addEventListener("scroll", () => {
-  for (const child of stickyHeader.children) {
-    if (window.scrollY > 750) {
-      child.classList.add("opacity-change");
-      stickyHeader.classList.add("fixed");
-    } else {
-      stickyHeader.classList.remove("fixed");
-      child.classList.remove("opacity-change");
-    }
-  }
-});
 
 function showText(e) {
   if (!e.classList.contains("show-flex")) {
@@ -187,16 +175,27 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 // });
 
 document.addEventListener("scroll", function () {
+  const stickyHeader = document.querySelector(".sticky-header");
   const background = document.querySelector(".ios-background");
   const content = document.querySelector(".main-content");
   const scrollPosition = window.scrollY;
   const contentTop = content.offsetTop;
 
+  for (const child of stickyHeader.children) {
+    if (window.scrollY > 750) {
+      child.classList.add("opacity-change");
+      stickyHeader.classList.add("fixed");
+    } else {
+      stickyHeader.classList.remove("fixed");
+      child.classList.remove("opacity-change");
+    }
+  }
+
   if (scrollPosition >= contentTop) {
-    background.classList.add("background-fixed");
+    // background.classList.add("background-fixed");
     background.style.top = "0";
   } else {
-    background.classList.remove("background-fixed");
+    // background.classList.remove("background-fixed");
     background.style.top = "0";
   }
 });
