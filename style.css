@@ -154,7 +154,6 @@ a:focus {
 
 /* #endregion */
 
-html,
 body {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 
@@ -479,9 +478,7 @@ hr {
     url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
 }
 
-.background-image,
-.background-image-mobile,
-.background-image-desktop {
+.background-image {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
