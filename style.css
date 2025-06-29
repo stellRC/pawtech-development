@@ -479,7 +479,8 @@ hr {
     url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
 }
 
-.background-image {
+.background-image,
+.background-image-mobile {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
