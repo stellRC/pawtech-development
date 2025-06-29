@@ -1030,9 +1030,9 @@ footer {
     margin-top: -3rem;
   }
 
-  /* .sticky-header + .main-content {
+  .sticky-header + .main-content {
     padding-top: 1vh;
-  } */
+  }
 
   .sticky-dsk-logo {
     display: block;
