@@ -185,3 +185,18 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 //   let vh = window.innerHeight * 0.01;
 //   document.documentElement.style.setProperty("--vh", `${vh}px`);
 // });
+
+document.addEventListener("scroll", function () {
+  const background = document.querySelector(".ios-background");
+  const content = document.querySelector(".main-content");
+  const scrollPosition = window.scrollY;
+  const contentTop = content.offsetTop;
+
+  if (scrollPosition >= contentTop) {
+    background.classList.add("background-fixed");
+    background.style.top = "0";
+  } else {
+    background.classList.remove("background-fixed");
+    background.style.top = "0";
+  }
+});

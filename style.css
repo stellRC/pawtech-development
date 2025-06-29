@@ -479,9 +479,10 @@ hr {
 
 .main-image {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg");
+    url("img/elec/conny-schneider-pREq0ns_p_E-unsplash.jpg") no-repeat center
+      center;
 
-  height: auto;
+  /* height: auto; */
 }
 
 .background-image {
@@ -489,6 +490,27 @@ hr {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.ios-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  z-index: -1;
+}
+
+.background-fixed {
+  z-index: 0;
+  position: fixed;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
 }
 
 /* #region STICKY NAV */
