@@ -166,6 +166,7 @@ body {
 .mobile-header {
   /* height: fit-content; */
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: var(--hero-mask);
   overflow: hidden;
 
@@ -953,7 +954,7 @@ footer {
 
 @media only screen and (max-width: 30em) and (min-height: 750px) {
   .hero-top {
-    gap: 10vh;
+    gap: 5vh;
   }
 }
 
