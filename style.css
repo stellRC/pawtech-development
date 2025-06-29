@@ -502,8 +502,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 
-  transition: height 2s ease-in-out;
-  /* display: none; */
+  transition: height 0.15s ease;
 }
 
 .sticky-header .logo-container {
@@ -904,15 +903,21 @@ footer {
 /* #endregion */
 
 /* #region JS */
+.sticky-header .logo-container,
+.sticky-header nav {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 .hide {
-  display: none;
+  opacity: 1 !important;
 }
 
 .fixed {
   /* position: sticky;
   top: 0; */
   z-index: 1000;
-  max-height: max-content;
+  /* max-height: max-content; */
+  height: auto;
 }
 
 .honey {
@@ -971,7 +976,7 @@ footer {
   .sticky-header {
     justify-content: space-between;
     align-content: center;
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   .sticky-header .logo-container {

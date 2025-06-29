@@ -117,11 +117,11 @@ const stickyHeader = document.querySelector(".sticky-header");
 document.addEventListener("scroll", () => {
   for (const child of stickyHeader.children) {
     if (window.scrollY > 700) {
-      stickyHeader.classList.add("fixed");
-      child.classList.remove("hide");
-    } else {
       child.classList.add("hide");
+      stickyHeader.classList.add("fixed");
+    } else {
       stickyHeader.classList.remove("fixed");
+      child.classList.remove("hide");
     }
   }
 });
