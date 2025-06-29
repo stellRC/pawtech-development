@@ -165,8 +165,9 @@ body {
 /* #region Header */
 .mobile-header {
   /* height: fit-content; */
-  height: 95vh;
-  height: calc(var(--vh, 1vh) * 97);
+  /* height: 95vh;
+  height: calc(var(--vh, 1vh) * 97); */
+  height: 100%;
   background: var(--hero-mask);
   overflow: hidden;
 
@@ -184,7 +185,8 @@ body {
 
   width: 100%;
 
-  height: calc(var(--vh, 1vh) * 97);
+  /* height: calc(var(--vh, 1vh) * 97); */
+  height: 100%;
   opacity: 0.2;
 }
 
