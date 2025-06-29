@@ -485,7 +485,8 @@ hr {
 /* #region STICKY NAV */
 .sticky-header {
   height: 0;
-
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -905,8 +906,8 @@ footer {
 }
 
 .fixed {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   z-index: 1000;
   min-height: fit-content;
 }
