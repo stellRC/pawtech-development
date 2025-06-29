@@ -159,18 +159,14 @@ a:focus {
 
 /* #endregion */
 
-body {
-  /* height: 100vh;
-  height: calc(var(--vh, 1vh) * 100); */
-  /* height: 100vh; */
+.mobile-header,
+.header-background {
+  height: 95vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* #region Header */
 .mobile-header {
-  /* height: fit-content; */
-  height: 95vh;
-  height: calc(var(--vh, 1vh) * 100);
-  /* min-height: 100vh; */
   background: var(--hero-mask);
   overflow: hidden;
 
@@ -188,8 +184,7 @@ body {
 
   width: 100%;
 
-  height: calc(var(--vh, 1vh) * 100);
-  height: 100%;
+  /* height: 100%; */
   opacity: 0.2;
 }
 
