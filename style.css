@@ -874,13 +874,10 @@ hr {
 .contact-image {
   background-image: url("img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
   filter: grayscale(0.5);
-
-  z-index: -2;
-  display: block;
 }
 
 .wire-image {
-  background-image: url(img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg);
+  background-image: url("img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
   background-position: center;
   background-size: cover;
   filter: grayscale(0.3);
