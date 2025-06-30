@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("font/lexend/webfonts/Lexend-Regular.woff2") format("woff2"),
+    url("font/lexend/ttf/Lexend-Regular.ttf") format("truetype");
+}
 :root {
   --content-max-width: 60ch;
 
@@ -10,8 +15,8 @@
 
   --text-weight: 400;
 
-  --font-family-main: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
+  --font-family-main: "Lexend", "Gill Sans", "Gill Sans MT", "Calibri",
+    "Trebuchet MS", sans-serif;
   --font-family-secondary: "Courier New", Courier, monospace;
 
   --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
