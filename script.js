@@ -186,7 +186,7 @@ document.addEventListener("scroll", function () {
   const contentTop = content.offsetTop;
 
   for (const child of stickyHeader.children) {
-    if (window.scrollY > 750) {
+    if (window.scrollY >= contentTop) {
       child.classList.add("opacity-change");
       stickyHeader.classList.add("fixed");
     } else {
