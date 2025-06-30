@@ -981,9 +981,9 @@ footer {
 /* Mobile only */
 
 @media only screen and (max-width: 30em) {
-  :modal {
+  /* :modal {
     height: 75vh;
-  }
+  } */
 
   .footer-flex {
     background-position: bottom;

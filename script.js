@@ -193,10 +193,8 @@ document.addEventListener("scroll", function () {
   }
 
   if (scrollPosition >= contentTop) {
-    // background.classList.add("background-fixed");
     background.style.top = "0";
   } else {
-    // background.classList.remove("background-fixed");
     background.style.top = "0";
   }
 });
