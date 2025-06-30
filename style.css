@@ -995,6 +995,16 @@ footer {
   }
 }
 
+@media only screen and (max-width: 30em) and (orientation: landscape) {
+  .sticky-mobile-logo {
+    transform: scale(0.4);
+  }
+
+  .sticky-dsk-logo {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 30em) and (min-height: 750px) {
   .hero-top {
     gap: 10vh;
@@ -1064,7 +1074,7 @@ footer {
   }
 
   .sticky-header + .main-content {
-    padding-top: 1vh;
+    padding-top: 2vh;
   }
 
   .sticky-dsk-logo {
