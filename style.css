@@ -750,10 +750,10 @@ hr {
   width: 90vw;
   color: inherit;
   border: none;
-  margin: 0 auto;
+  margin: auto;
   position: fixed;
   bottom: 0;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding-bottom: 1rem;
 }
 
