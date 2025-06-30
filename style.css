@@ -750,6 +750,7 @@ hr {
   width: 90vw;
   color: inherit;
   border: none;
+  margin: 0 auto;
 }
 
 .service-header-expanded h3 {
