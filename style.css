@@ -523,7 +523,9 @@ hr {
   justify-content: space-around;
   align-items: center;
   padding-inline: 1rem 0.5rem;
-
+  opacity: 1;
+  background-attachment: fixed;
+  right: 0;
   transition: height 0.15s ease;
 }
 
@@ -1236,7 +1238,7 @@ footer {
 
   .flex-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     overflow-y: hidden;
     gap: 2rem;
   }
@@ -1246,9 +1248,8 @@ footer {
     width: 15vw;
     transform: scaleX(-1);
 
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    justify-self: flex-end;
+    align-self: flex-end;
   }
 
   .contact-content .flex-center {
