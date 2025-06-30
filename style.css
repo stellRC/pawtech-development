@@ -751,6 +751,8 @@ hr {
   color: inherit;
   border: none;
   margin: 0 auto;
+  position: fixed;
+  bottom: 0;
 }
 
 .service-header-expanded h3 {
