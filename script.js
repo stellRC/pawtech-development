@@ -190,8 +190,8 @@ document.addEventListener("scroll", function () {
       child.classList.add("opacity-change");
       stickyHeader.classList.add("fixed");
     } else {
-      stickyHeader.classList.remove("fixed");
       child.classList.remove("opacity-change");
+      stickyHeader.classList.remove("fixed");
     }
   }
 
