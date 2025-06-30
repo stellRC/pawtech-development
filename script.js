@@ -201,8 +201,3 @@ document.addEventListener("scroll", function () {
     background.style.top = "0";
   }
 });
-
-// Safari scroll trigger fix
-document
-  .querySelector(".scroller")
-  .addEventListener("scroll", ScrollTrigger.update);
