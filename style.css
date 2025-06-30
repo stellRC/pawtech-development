@@ -746,7 +746,7 @@ hr {
   -webkit-backdrop-filter: blur(50px);
   justify-self: center;
   align-self: flex-end;
-  height: 90vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 90vw;
   color: inherit;
   border: none;
