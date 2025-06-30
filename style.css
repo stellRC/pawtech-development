@@ -946,17 +946,15 @@ footer {
 .sticky-header .logo-container,
 .sticky-header nav {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1);
 }
 .opacity-change {
   opacity: 1 !important;
 }
 
 .fixed {
-  /* position: sticky;
-  top: 0; */
   z-index: 1000;
-  /* max-height: max-content; */
+
   height: auto;
 }
 
@@ -977,7 +975,6 @@ footer {
 }
 
 .clicked {
-  /* background-color: var(--link-hover); */
   border: none;
 }
 
@@ -1059,10 +1056,6 @@ footer {
     flex-direction: column;
   }
 
-  /* .caption {
-    grid-area: caption;
-  } */
-
   .typewrite {
     position: absolute;
     top: 0;
@@ -1073,9 +1066,9 @@ footer {
     margin-top: -3rem;
   }
 
-  .sticky-header + .main-content {
-    padding-top: 2vh;
-  }
+  /* .fixed + .main-content {
+    padding-top: 2rem;
+  } */
 
   .sticky-dsk-logo {
     display: block;
