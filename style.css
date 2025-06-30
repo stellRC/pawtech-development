@@ -864,7 +864,10 @@ hr {
 
 .partners-col img {
   padding: 1vh;
-  filter: grayscale(0.6);
+
+  filter: drop-shadow(5px 5px 0 rgb(12, 52, 32)) grayscale(0.6)
+    drop-shadow(5px 5px 0 rgb(39, 43, 118));
+
   border-radius: 15px;
 }
 
@@ -1106,7 +1109,7 @@ footer {
     display: none;
   }
 
-  /* @media (prefers-reduced-motion: no-preference) {
+  @media (prefers-reduced-motion: no-preference) {
     .icon-animation {
       --range-start: contain 0;
       --range-end: contain 100%;
@@ -1123,7 +1126,7 @@ footer {
         animation-range: contain 0 contain 100%;
       }
     }
-  } */
+  }
 
   @keyframes rotateAnimation {
     from {
