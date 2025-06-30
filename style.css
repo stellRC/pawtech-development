@@ -483,7 +483,7 @@ hr {
 }
 
 .background-image {
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -869,7 +869,7 @@ hr {
 /* #region CONTACT */
 #contact {
   padding: 0;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 .contact-image {
   background-image: url("img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
@@ -918,9 +918,8 @@ footer {
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
-
-  background-position: bottom;
 }
+
 .footer-nav {
   display: flex;
   flex-direction: row;
@@ -1232,15 +1231,19 @@ footer {
 
   .flex-row {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     overflow-y: hidden;
     gap: 2rem;
   }
 
-  .flex-row .hide-horse {
+  .hide-horse {
     display: block;
     width: 15vw;
     transform: scaleX(-1);
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
   }
 
   .contact-content .flex-center {
