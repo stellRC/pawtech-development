@@ -918,6 +918,8 @@ footer {
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
+
+  background-position: bottom;
 }
 
 .footer-nav {
