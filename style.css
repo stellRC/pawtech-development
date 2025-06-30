@@ -980,6 +980,7 @@ footer {
 
   .footer-flex {
     background-position: bottom;
+    outline: 1px solid red;
   }
 }
 
