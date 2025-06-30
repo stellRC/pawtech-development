@@ -487,6 +487,7 @@ hr {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .ios-background {
@@ -877,10 +878,13 @@ hr {
 }
 
 .wire-image {
-  background-image: url("img/elec/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
   background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
   background-size: cover;
-  filter: grayscale(0.3);
+  bottom: 0;
 }
 
 .contact-info {
@@ -980,7 +984,6 @@ footer {
 
   .footer-flex {
     background-position: bottom;
-    outline: 1px solid red;
   }
 }
 
