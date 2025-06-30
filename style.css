@@ -754,6 +754,7 @@ hr {
   position: fixed;
   bottom: 0;
   margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .service-header-expanded h3 {
